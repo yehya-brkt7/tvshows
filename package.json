@@ -32,8 +32,8 @@
     "zustand": "^4.0.0-rc.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "node Backend/server.js",
+    "build": "cd Backend && npm install && cd ../Frontend && npm install && npm run build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
