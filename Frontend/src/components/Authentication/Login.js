@@ -30,7 +30,7 @@ const Login = (props) => {
         setUser(user);
 
         axios
-          .post("http://localhost:4000/apis/user", {
+          .post("https://track-your-series.onrender.com/apis/user", {
             uid: user.uid,
           })
           .then(() => {

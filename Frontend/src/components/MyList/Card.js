@@ -36,7 +36,7 @@ const HorizontalCard = ({
 
   const deleteShow = (id) => {
     axios
-      .delete("http://localhost:4000/apis/shows", {
+      .delete("https://track-your-series.onrender.com/apis/shows", {
         data: {
           usid: userid,
           id: id,
@@ -50,7 +50,7 @@ const HorizontalCard = ({
       });
 
     axios
-      .delete("http://localhost:4000/apis/disabledarr", {
+      .delete("https://track-your-series.onrender.com/apis/disabledarr", {
         data: {
           usid: userid,
           id: id,
@@ -66,7 +66,7 @@ const HorizontalCard = ({
 
   const updateShow = (id, fanrating) => {
     axios
-      .put("http://localhost:4000/apis/shows", {
+      .put("https://track-your-series.onrender.com/apis/shows", {
         usid: userid,
         id: id,
         fanrating: frating,

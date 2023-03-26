@@ -20,7 +20,9 @@ function App() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:4000/apis/shows", { usid: userid })
+      .get("https://track-your-series.onrender.com/apis/shows", {
+        usid: userid,
+      })
       .then((res) => {
         setPickedList(res.data);
       })
@@ -29,7 +31,9 @@ function App() {
       });
 
     axios
-      .get("http://localhost:4000/apis/disabledarr", { usid: userid })
+      .get("https://track-your-series.onrender.com/apis/disabledarr", {
+        usid: userid,
+      })
       .then((res) => {
         setIds(res.data);
       })

@@ -117,7 +117,7 @@ export default function ShowCard(props) {
 
   const pickShow = () => {
     axios
-      .post("http://localhost:4000/apis/shows", {
+      .post("https://track-your-series.onrender.com/apis/shows", {
         title: name,
         genres: genres,
         rating: rating,
@@ -131,7 +131,7 @@ export default function ShowCard(props) {
       });
 
     axios
-      .post("http://localhost:4000/apis/disabledarr", {
+      .post("https://track-your-series.onrender.com/apis/disabledarr", {
         id: id,
         usid: userid,
       })

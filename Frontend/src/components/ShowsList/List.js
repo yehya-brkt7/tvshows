@@ -41,7 +41,7 @@ const List = ({
     setUserName(user.displayName);
 
     axios
-      .get("http://localhost:4000/apis/user", {
+      .get("https://track-your-series.onrender.com/apis/user", {
         uid: userid,
       })
       .then((res) => {
