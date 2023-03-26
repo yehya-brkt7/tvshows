@@ -12,12 +12,22 @@ const useStore = create((set) => ({
     set({ shows: await response.data });
   },
 
+  // id: 0,
+
+  // setId: () => set((state) => state.id),
+
   user: {},
+
+  userid: "",
 
   token: "",
 
+  userName: "",
+
   setUser: (user) => set({ user }),
   setToken: (token) => set({ token }),
+  setUserid: (userid) => set({ userid }),
+  setUserName: (userName) => set({ userName }),
 
   starrating: 0,
   setRating: (starrating) => set({ starrating }),

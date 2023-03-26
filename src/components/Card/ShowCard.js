@@ -1,5 +1,5 @@
 import * as React from "react";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { styled } from "@mui/material/styles";
 import Card from "@mui/material/Card";
 import CardHeader from "@mui/material/CardHeader";
@@ -27,6 +27,10 @@ import db from "../../services/Firebase";
 import { arrayUnion, doc, setDoc } from "firebase/firestore";
 import ReactStars from "react-rating-stars-component";
 import shadows from "@mui/material/styles/shadows";
+import style from "./showcard.module.css";
+import { ShowerSharp } from "@mui/icons-material";
+import { light } from "@mui/material/styles/createPalette";
+import axios from "axios";
 
 const StyledRating = styled(Rating)({
   "& .MuiRating-iconFilled": {
@@ -55,10 +59,29 @@ const styles = {
 };
 
 export default function ShowCard(props) {
-  const { name, status, genres, image, rating, summary, id, fanrating, shows } =
-    props;
+  const {
+    name,
+    status,
+    genres,
+    image,
+    rating,
+    summary,
+    id,
+    fanrating,
+    shows,
+    index,
+    show,
+    pickedList,
+    setPickedList,
+    showadded,
+    setShowadded,
+    ids,
+    setIds,
+    Id,
+    setId,
+  } = props;
 
-  const { starrating, setRating } = useStore((state) => state);
+  const { userid } = useStore((state) => state);
 
   const [expanded, setExpanded] = React.useState(false);
 
@@ -78,34 +101,56 @@ export default function ShowCard(props) {
     },
   };
 
-  const [click, setClick] = useState(false);
+  const boxSX = {
+    "&:hover": {
+      transform: `scale(1.05)`,
+      transition: `all .3s ease-in-out`,
+    },
 
-  // const storedratings =
-  //   JSON.parse(localStorage.getItem("currentRatings")) ||
-  //   new Array(240).fill(0);
-
-  // const [ratings, setRatings] = useState([]);
-
-  const ratings = new Array(240).fill(0);
-  // localStorage.setItem("currentRatings", JSON.stringify(ratings));
-
-  const handleChange = (e) => {
-    ratings[id] = e.target.value;
+    "&:not( :hover )": {
+      transform: `scale(1)`,
+      transition: `all .3s ease-in-out`,
+    },
   };
 
-  const save = () => {
-    // localStorage.getItem("currentRatings");
-    // setRatings(storedratings);
-    // localStorage.setItem("currentRatings", JSON.stringify(ratings));
-    console.log(ratings);
-  };
+  let btnRef = useRef();
 
-  useEffect(() => {
-    setClick(true);
-  }, []);
+  const pickShow = () => {
+    axios
+      .post("http://localhost:4000/apis/shows", {
+        title: name,
+        genres: genres,
+        rating: rating,
+        fanrating: 5,
+        id: id,
+        usid: userid,
+        image: image,
+      })
+      .then(() => {
+        setShowadded(!showadded);
+      });
+
+    axios
+      .post("http://localhost:4000/apis/disabledarr", {
+        id: id,
+        usid: userid,
+      })
+      .then((res) => {
+        // setIds([...ids, id]);
+
+        setShowadded(!showadded);
+      })
+      .catch((err) => {
+        console.log("error", err);
+      });
+
+    if (btnRef.current) {
+      btnRef.current.setAttribute("disabled", "disabled");
+    }
+  };
 
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={boxSX}>
       <CardHeader
         sx={{
           height: 50,
@@ -115,7 +160,7 @@ export default function ShowCard(props) {
         }}
         avatar={
           <Avatar sx={{ bgcolor: "warning.main" }} aria-label="recipe">
-            {id}
+            {index}
           </Avatar>
         }
         // action={
@@ -140,17 +185,11 @@ export default function ShowCard(props) {
         alt="Paella dish"
         marginTop="10px"
         style={styles.media}
+        loading="lazy"
       />
-      <Grid item container justifyContent="center" alignItems="flex-end">
-        Official Rating:{" "}
-        <AiFillStar
-          style={{ marginLeft: "10px", marginTop: "10px", fill: "#E6B316" }}
-        />{" "}
-        {rating} /10
-      </Grid>
 
       <Grid item container justifyContent="center" alignItems="flex-end">
-        Fan Rating:{" "}
+        Official Rating:{" "}
         <AiFillStar
           style={{ marginLeft: "10px", marginTop: "10px", fill: "#E6B316" }}
         />{" "}
@@ -164,12 +203,13 @@ export default function ShowCard(props) {
           style={{ cursor: "pointer" }}
         >
           <ExpandText maxLength={50} className="expand" text={summary} />
+          ......<b>click to view</b>
         </Typography>
       </CardContent>
 
       <CardActions>
         <Grid container direction="row" justifyContent="center">
-          <Grid item xs={12}>
+          {/* <Grid item xs={12}>
             <Box
               sx={{
                 "& > legend": { mt: 2 },
@@ -184,8 +224,8 @@ export default function ShowCard(props) {
               />
               <button onClick={save}>save</button>
             </Box>
-          </Grid>
-          <Grid item xs={12} backgroundColor="#ddd">
+          </Grid> */}
+          {/* <Grid item xs={12} backgroundColor="#ddd">
             <ExpandMore
               expand={expanded}
               onClick={handleExpandClick}
@@ -194,11 +234,34 @@ export default function ShowCard(props) {
             >
               <ExpandMoreIcon />
             </ExpandMore>
+          </Grid> */}
+          <Grid item xs={6}>
+            <div className={style.buttons}>
+              <div className={style.container}>
+                <button
+                  onClick={pickShow}
+                  ref={btnRef}
+                  // disabled={disable.indexOf(id) !== -1}
+                  disabled={
+                    ids
+                      .filter((obj) => obj.usid === userid)
+                      .findIndex((obj) => obj.id === id) !== -1
+                      ? true
+                      : false
+                  }
+                  className="btn"
+                  data-sm-link-text="Pick series"
+                  target="_blank"
+                >
+                  <span className={style.google}>Add To List</span>
+                </button>
+              </div>
+            </div>
           </Grid>
         </Grid>
       </CardActions>
 
-      <Collapse in={expanded} timeout="auto" unmountOnExit>
+      {/* <Collapse in={expanded} timeout="auto" unmountOnExit>
         <Box
           sx={{
             "& > legend": { mt: 2 },
@@ -217,7 +280,7 @@ export default function ShowCard(props) {
           <Typography component="legend">Sounds and Music</Typography>
           <Rating name="customized-10" defaultValue={2} max={10} />
         </Box>
-      </Collapse>
+      </Collapse> */}
     </Card>
   );
 }

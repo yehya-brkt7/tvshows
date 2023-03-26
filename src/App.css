@@ -13,6 +13,11 @@
   }
 }
 
+h1,
+h2 {
+  color: white !important;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -35,4 +40,83 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.btn {
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 45px;
+  max-width: 160px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  background-color: black;
+  opacity: 0.9;
+  text-decoration: none;
+  --uismLinkDisplay: var(--smLinkDisplay, inline-flex);
+  display: var(--uismLinkDisplay);
+  color: #000;
+  font-size: 15px;
+  font-weight: bold;
+  outline: solid 2px #000;
+  position: relative;
+  transition-duration: 0.4s;
+  overflow: hidden;
+  border: 1px solid white;
+}
+
+.btn::before,
+.btn span {
+  margin: 0 auto;
+  transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  transition-duration: 0.4s;
+}
+
+/* 文字1を上に */
+.btn:hover {
+  background-color: #000;
+}
+
+/* HOVERしたら文字1を上に */
+.btn:hover span {
+  -webkit-transform: translateY(-400%) scale(-0.1, 20);
+  transform: translateY(-400%) scale(-0.1, 20);
+}
+
+/*文字2*/
+.btn::before {
+  content: attr(data-sm-link-text);
+  color: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  -webkit-transform: translateY(500%) scale(-0.1, 20);
+  transform: translateY(500%) scale(-0.1, 20);
+}
+
+/* HOVERしたら文字2を上に */
+.btn:hover::before {
+  letter-spacing: 0.05em;
+  -webkit-transform: translateY(0) scale(1, 1);
+  transform: translateY(0) scale(1, 1);
+}
+
+.btn:disabled {
+  pointer-events: none;
+  opacity: 0.3;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 45px;
+  max-width: 160px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  background-color: black;
 }

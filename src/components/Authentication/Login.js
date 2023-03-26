@@ -1,14 +1,15 @@
 import React from "react";
-import style from "./login.css";
+import style from "./login.module.css";
 import Grid from "@mui/material/Grid";
 import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import { auth, provider } from "../../services/Firebase"; // update path to your firestore config
 import { useNavigate } from "react-router-dom";
 import bg from "../../assets/bg.jpg";
 import useStore from "../Store/Store";
+import axios from "axios";
 
 const Login = (props) => {
-  const { user, token, setUser, setToken } = useStore((state) => state);
+  const { setToken, setUser, setUserid } = useStore((state) => state);
   const navigate = useNavigate();
 
   const googleHandler = async (e) => {
@@ -21,9 +22,20 @@ const Login = (props) => {
         const credential = GoogleAuthProvider.credentialFromResult(result);
         const token = credential.accessToken;
         setToken({ token });
+
         // The signed-in user info.
+
         const user = result.user;
-        setUser({ user });
+
+        setUser(user);
+
+        axios
+          .post("http://localhost:4000/apis/user", {
+            uid: user.uid,
+          })
+          .then(() => {
+            setUserid(user.uid);
+          });
 
         navigate("/list");
 
@@ -53,6 +65,7 @@ const Login = (props) => {
     border: "2px solid black",
     borderRadius: "15px",
     marginTop: "200px",
+    border: "1px solid white",
   };
 
   return (
@@ -68,15 +81,15 @@ const Login = (props) => {
           style={image}
         >
           <Grid item xs={12} marginTop="293px">
-            <div class="buttons">
-              <div class="container">
+            <div className={style.buttons}>
+              <div className={style.container}>
                 <a
                   onClick={googleHandler}
-                  class="btn effect04"
+                  className={`${style.btn} ${style.effect04}`}
                   data-sm-link-text="LOGIN"
                   target="_blank"
                 >
-                  <span className="google">Google</span>
+                  <span className={style.google}>Google</span>
                 </a>
               </div>
             </div>
