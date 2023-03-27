@@ -11,7 +11,12 @@ const showsapp = express();
 
 //Cors
 var cors = require("cors");
-showsapp.use(cors());
+const corsOptions = {
+  origin: "*",
+  credentials: true, //access-control-allow-credentials:true
+  optionSuccessStatus: 200,
+};
+showsapp.use(cors(corsOptions));
 
 //middleware
 showsapp.use(express.json());
