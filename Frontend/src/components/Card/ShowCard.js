@@ -117,7 +117,7 @@ export default function ShowCard(props) {
 
   const pickShow = () => {
     axios
-      .post("https://trackyourseries.vercel.app/apis/shows", {
+      .post("https://trackyourseries.onrender.com/apis/shows", {
         title: name,
         genres: genres,
         rating: rating,
@@ -131,7 +131,7 @@ export default function ShowCard(props) {
       });
 
     axios
-      .post("https://trackyourseries.vercel.app/apis/disabledarr", {
+      .post("https://trackyourseries.onrender.com/apis/disabledarr", {
         id: id,
         usid: userid,
       })

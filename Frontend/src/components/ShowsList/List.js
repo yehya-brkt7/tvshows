@@ -41,7 +41,7 @@ const List = ({
     setUserName(user.displayName);
 
     axios
-      .get("https://trackyourseries.vercel.app/apis/user", {
+      .get("https://trackyourseries.onrender.com/apis/user", {
         uid: userid,
       })
       .then((res) => {

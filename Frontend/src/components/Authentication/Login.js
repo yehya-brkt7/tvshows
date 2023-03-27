@@ -30,7 +30,7 @@ const Login = (props) => {
         setUser(user);
 
         axios
-          .post("https://trackyourseries.vercel.app/apis/user", {
+          .post("https://trackyourseries.onrender.com/apis/user", {
             uid: user.uid,
           })
           .then(() => {
