@@ -7,7 +7,8 @@ import { auth } from "../../services/Firebase"; // update path to your firestore
 import { useNavigate } from "react-router-dom";
 import style from "./list.module.css";
 import Toolbar from "@mui/material/Toolbar";
-import SearchIcon from "@material-ui/icons/Search";
+// import SearchIcon from "@material-ui/icons/Search";
+import SearchIcon from "@mui/icons-material/Search";
 import TextField from "@mui/material/TextField";
 import axios from "axios";
 
