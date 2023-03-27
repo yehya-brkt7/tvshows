@@ -36,7 +36,7 @@ const HorizontalCard = ({
 
   const deleteShow = (id) => {
     axios
-      .delete("https://trackyourseries.onrender.com/apis/shows", {
+      .delete("https://trackyourseries.vercel.app/apis/shows", {
         data: {
           usid: userid,
           id: id,
@@ -50,7 +50,7 @@ const HorizontalCard = ({
       });
 
     axios
-      .delete("https://trackyourseries.onrender.com/apis/disabledarr", {
+      .delete("https://trackyourseries.vercel.app/apis/disabledarr", {
         data: {
           usid: userid,
           id: id,
@@ -66,7 +66,7 @@ const HorizontalCard = ({
 
   const updateShow = (id, fanrating) => {
     axios
-      .put("https://trackyourseries.onrender.com/apis/shows", {
+      .put("https://trackyourseries.vercel.app/apis/shows", {
         usid: userid,
         id: id,
         fanrating: frating,

@@ -20,7 +20,7 @@ function App() {
 
   useEffect(() => {
     axios
-      .get("https://trackyourseries.onrender.com/apis/shows", {
+      .get("https://trackyourseries.vercel.app/apis/shows", {
         usid: userid,
       })
       .then((res) => {
@@ -31,7 +31,7 @@ function App() {
       });
 
     axios
-      .get("https://trackyourseries.onrender.com/apis/disabledarr", {
+      .get("https://trackyourseries.vercel.app/apis/disabledarr", {
         usid: userid,
       })
       .then((res) => {
