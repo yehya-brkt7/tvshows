@@ -1,5 +1,5 @@
 import React, { useEffect, useState, Suspense, useRef } from "react";
-import ShowCard from "../Card/ShowCard";
+// import ShowCard from "../Card/ShowCard";
 import useStore from "../Store/Store";
 import Grid from "@mui/material/Grid";
 import { signOut } from "firebase/auth";
@@ -10,7 +10,10 @@ import Toolbar from "@mui/material/Toolbar";
 import SearchIcon from "@mui/icons-material/Search";
 import TextField from "@mui/material/TextField";
 import axios from "axios";
+import SkeletonCard from "./Skeleton";
 import Avatar from "@mui/material/Avatar";
+
+const LazyCard = React.lazy(() => import("../Card/ShowCard"));
 
 // const ShowCard = React.lazy(() => import("../Card/ShowCard"));
 
@@ -151,27 +154,29 @@ const List = ({
             show.name.toLowerCase().includes(filter) && (
               <>
                 <Grid item xs={10} sm={6} md={4} lg={3} key={show.id}>
-                  <ShowCard
-                    name={show.name}
-                    status={show.status}
-                    genres={show.genres}
-                    image={show.image.original}
-                    rating={show.rating.average}
-                    summary={show.summary}
-                    id={show.id}
-                    show={show}
-                    index={index + 1}
-                    fanrating={show.runtime}
-                    shows={shows}
-                    pickedList={pickedList}
-                    setPickedList={setPickedList}
-                    showadded={showadded}
-                    setShowadded={setShowadded}
-                    ids={ids}
-                    setIds={setIds}
-                    Id={Id}
-                    setId={setId}
-                  />
+                  <React.Suspense fallback={<SkeletonCard />}>
+                    <LazyCard
+                      name={show.name}
+                      status={show.status}
+                      genres={show.genres}
+                      image={show.image.original}
+                      rating={show.rating.average}
+                      summary={show.summary}
+                      id={show.id}
+                      show={show}
+                      index={index + 1}
+                      fanrating={show.runtime}
+                      shows={shows}
+                      pickedList={pickedList}
+                      setPickedList={setPickedList}
+                      showadded={showadded}
+                      setShowadded={setShowadded}
+                      ids={ids}
+                      setIds={setIds}
+                      Id={Id}
+                      setId={setId}
+                    />
+                  </React.Suspense>
                 </Grid>
               </>
             )
