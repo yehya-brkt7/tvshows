@@ -34,6 +34,7 @@ const Login = (props) => {
             uid: user.uid,
           })
           .then(() => {
+            console.log(user);
             setUserid(user.uid);
           });
 

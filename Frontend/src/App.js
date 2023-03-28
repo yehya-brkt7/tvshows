@@ -70,15 +70,19 @@ function App() {
           <Route
             path="/mylist"
             element={
-              <MyList
-                pickedList={pickedList}
-                Id={Id}
-                setId={setId}
-                showadded={showadded}
-                setShowadded={setShowadded}
-                ids={ids}
-                setIds={setIds}
-              />
+              userid != "" ? (
+                <MyList
+                  pickedList={pickedList}
+                  Id={Id}
+                  setId={setId}
+                  showadded={showadded}
+                  setShowadded={setShowadded}
+                  ids={ids}
+                  setIds={setIds}
+                />
+              ) : (
+                <Login />
+              )
             }
           />
         </Routes>

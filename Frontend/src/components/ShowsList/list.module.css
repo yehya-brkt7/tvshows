@@ -124,19 +124,7 @@
   margin-bottom: 50px;
 }
 
-.dropdown {
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  border: 1px solid gray;
-}
-
-.dropdown:empty {
-  border: none;
-}
-
-.dropdownrow {
-  cursor: pointer;
-  text-align: start;
-  margin: 2px 0;
+.avatarimage {
+  margin-top: 3px;
+  margin-right: 10px;
 }

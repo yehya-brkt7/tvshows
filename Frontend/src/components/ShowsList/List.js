@@ -10,6 +10,7 @@ import Toolbar from "@mui/material/Toolbar";
 import SearchIcon from "@mui/icons-material/Search";
 import TextField from "@mui/material/TextField";
 import axios from "axios";
+import Avatar from "@mui/material/Avatar";
 
 // const ShowCard = React.lazy(() => import("../Card/ShowCard"));
 
@@ -104,7 +105,7 @@ const List = ({
             </div>
           </div>
         </Grid>
-        <Grid item xs={12} sm={4}>
+        <Grid item xs={12} container justifyContent="center" sm={4}>
           <div className={style.buttons}>
             <div className={style.container}>
               <a
@@ -114,6 +115,13 @@ const List = ({
                 target="_blank"
               >
                 <span className={style.google}>LogOut</span>
+                <Avatar
+                  className={style.avatarimage}
+                  sx={{ marginTop: "25px" }}
+                >
+                  {" "}
+                  <img src={user.photoURL} referrerpolicy="no-referrer" />
+                </Avatar>
               </a>
             </div>
           </div>
