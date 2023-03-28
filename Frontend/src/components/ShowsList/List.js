@@ -64,12 +64,6 @@ const List = ({
   }, []);
 
   useEffect(() => {
-    if (userid.length == 0) {
-      navigate("/");
-    }
-  }, [userid]);
-
-  useEffect(() => {
     const sorted = shows.sort((a, b) => b.rating.average - a.rating.average);
 
     setSortedshows(sorted);
@@ -93,6 +87,11 @@ const List = ({
   const viewList = () => {
     navigate("/mylist");
   };
+
+  useEffect(() => {
+    const check = localStorage.getItem("userid");
+    if (check == "") navigate("/");
+  }, [userid]);
 
   return (
     <>

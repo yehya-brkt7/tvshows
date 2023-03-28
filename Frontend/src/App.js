@@ -40,10 +40,6 @@ function App() {
       .catch((err) => {});
   }, [showadded, userid]);
 
-  useEffect(() => {
-    console.log("ids", ids);
-  }, [ids]);
-
   return (
     <div className="App">
       <Router>
@@ -52,16 +48,20 @@ function App() {
           <Route
             path="/list"
             element={
-              <List
-                pickedList={pickedList}
-                setPickedList={setPickedList}
-                showadded={showadded}
-                setShowadded={setShowadded}
-                ids={ids}
-                setIds={setIds}
-                Id={Id}
-                setId={setId}
-              />
+              userid != "" ? (
+                <List
+                  pickedList={pickedList}
+                  setPickedList={setPickedList}
+                  showadded={showadded}
+                  setShowadded={setShowadded}
+                  ids={ids}
+                  setIds={setIds}
+                  Id={Id}
+                  setId={setId}
+                />
+              ) : (
+                <Login />
+              )
             }
           />
           <Route
