@@ -34,7 +34,6 @@ const Login = (props) => {
             uid: user.uid,
           })
           .then(() => {
-            console.log(user);
             setUserid(user.uid);
           });
 
@@ -101,4 +100,4 @@ const Login = (props) => {
   );
 };
 
-export default Login;
+export default React.memo(Login);

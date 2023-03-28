@@ -2,7 +2,7 @@ import * as React from "react";
 import Skeleton from "@mui/material/Skeleton";
 import Stack from "@mui/material/Stack";
 
-export default function SkeletonCard() {
+const SkeletonCard = () => {
   return (
     <Stack spacing={1}>
       {/* For variant="text", adjust the height via font-size */}
@@ -28,4 +28,6 @@ export default function SkeletonCard() {
       />
     </Stack>
   );
-}
+};
+
+export default React.memo(SkeletonCard);

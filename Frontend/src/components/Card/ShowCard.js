@@ -43,7 +43,7 @@ const styles = {
   },
 };
 
-export default function ShowCard(props) {
+const ShowCard = (props) => {
   const {
     name,
     genres,
@@ -116,9 +116,7 @@ export default function ShowCard(props) {
 
         setShowadded(!showadded);
       })
-      .catch((err) => {
-        console.log("error", err);
-      });
+      .catch((err) => {});
 
     if (btnRef.current) {
       btnRef.current.setAttribute("disabled", "disabled");
@@ -180,39 +178,12 @@ export default function ShowCard(props) {
 
       <CardActions>
         <Grid container direction="row" justifyContent="center">
-          {/* <Grid item xs={12}>
-            <Box
-              sx={{
-                "& > legend": { mt: 2 },
-              }}
-            >
-              <Typography component="legend"> Overall Rating</Typography>
-              <Rating
-                name={id.toString()}
-                value={ratings[id]}
-                onChange={handleChange}
-                max={10}
-              />
-              <button onClick={save}>save</button>
-            </Box>
-          </Grid> */}
-          {/* <Grid item xs={12} backgroundColor="#ddd">
-            <ExpandMore
-              expand={expanded}
-              onClick={handleExpandClick}
-              aria-expanded={expanded}
-              aria-label="show more"
-            >
-              <ExpandMoreIcon />
-            </ExpandMore>
-          </Grid> */}
           <Grid item xs={6}>
             <div className={style.buttons}>
               <div className={style.container}>
                 <button
                   onClick={pickShow}
                   ref={btnRef}
-                  // disabled={disable.indexOf(id) !== -1}
                   disabled={
                     ids
                       .filter((obj) => obj.usid === userid)
@@ -231,27 +202,8 @@ export default function ShowCard(props) {
           </Grid>
         </Grid>
       </CardActions>
-
-      {/* <Collapse in={expanded} timeout="auto" unmountOnExit>
-        <Box
-          sx={{
-            "& > legend": { mt: 2 },
-          }}
-        >
-          <Typography component="legend">Pace</Typography>
-          <Rating name="customized-10" defaultValue={2} max={10} />
-          <Typography component="legend">Acting</Typography>
-          <Rating name="customized-10" defaultValue={2} max={10} />
-          <Typography component="legend">Story Development</Typography>
-          <Rating name="customized-10" defaultValue={2} max={10} />
-          <Typography component="legend">Character Development</Typography>
-          <Rating name="customized-10" defaultValue={2} max={10} />
-          <Typography component="legend">Cinematography</Typography>
-          <Rating name="customized-10" defaultValue={2} max={10} />
-          <Typography component="legend">Sounds and Music</Typography>
-          <Rating name="customized-10" defaultValue={2} max={10} />
-        </Box>
-      </Collapse> */}
     </Card>
   );
-}
+};
+
+export default React.memo(ShowCard);

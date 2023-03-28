@@ -22,7 +22,7 @@ function valuetext(value) {
   return { value };
 }
 
-export default function DiscreteSliderMarks({ index, frating, setRating }) {
+const DiscreteSliderMarks = ({ index, frating, setRating }) => {
   const handleChange = (event) => {
     setRating(event.target.value);
   };
@@ -48,4 +48,6 @@ export default function DiscreteSliderMarks({ index, frating, setRating }) {
       />
     </Box>
   );
-}
+};
+
+export default React.memo(DiscreteSliderMarks);

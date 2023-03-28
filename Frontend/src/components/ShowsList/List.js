@@ -40,9 +40,7 @@ const List = ({
       .get("https://trackyourseries.onrender.com/apis/user", {
         uid: userid,
       })
-      .then((res) => {
-        console.log("show", res);
-      });
+      .then((res) => {});
   }, [user]);
 
   const url = "Shows.Json";
@@ -64,9 +62,7 @@ const List = ({
       .then(() => {
         navigate("/");
       })
-      .catch((error) => {
-        console.log(error);
-      });
+      .catch((error) => {});
   };
 
   const header = {
@@ -187,4 +183,4 @@ const List = ({
   );
 };
 
-export default List;
+export default React.memo(List);

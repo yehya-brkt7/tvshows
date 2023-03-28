@@ -27,9 +27,7 @@ function App() {
       .then((res) => {
         setPickedList(res.data);
       })
-      .catch((err) => {
-        console.log("error", err);
-      });
+      .catch((err) => {});
 
     axios
       .get("https://trackyourseries.onrender.com/apis/disabledarr", {

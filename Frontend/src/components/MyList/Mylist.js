@@ -54,4 +54,4 @@ const MyList = (props) => {
   );
 };
 
-export default MyList;
+export default React.memo(MyList);

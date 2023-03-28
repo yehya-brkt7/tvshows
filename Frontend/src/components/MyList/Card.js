@@ -1,3 +1,4 @@
+import React from "react";
 import DiscreteSliderMarks from "./Slider.js";
 import style from "./card.module.css";
 import CardMedia from "@mui/material/CardMedia";
@@ -44,9 +45,7 @@ const HorizontalCard = ({
       .then((res) => {
         setShowadded(!showadded);
       })
-      .catch((err) => {
-        console.log("err", err);
-      });
+      .catch((err) => {});
 
     axios
       .delete("https://trackyourseries.onrender.com/apis/disabledarr", {
@@ -58,9 +57,7 @@ const HorizontalCard = ({
       .then((res) => {
         setShowadded(!showadded);
       })
-      .catch((err) => {
-        console.log("err", err);
-      });
+      .catch((err) => {});
   };
 
   const updateShow = (id, fanrating) => {
@@ -73,9 +70,7 @@ const HorizontalCard = ({
       .then(() => {
         setShowadded(!showadded);
       })
-      .catch((err) => {
-        console.log("err", err);
-      });
+      .catch((err) => {});
   };
 
   return (
@@ -137,4 +132,4 @@ const HorizontalCard = ({
   );
 };
 
-export default HorizontalCard;
+export default React.memo(HorizontalCard);
