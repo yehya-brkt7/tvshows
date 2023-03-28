@@ -9,7 +9,7 @@ import useStore from "../Store/Store";
 import axios from "axios";
 
 const Login = (props) => {
-  const { setToken, setUser, setUserid, userid } = useStore((state) => state);
+  const { setToken, setUser, setUserid } = useStore((state) => state);
   const navigate = useNavigate();
 
   const googleHandler = async (e) => {

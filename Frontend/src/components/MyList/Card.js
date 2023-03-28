@@ -1,5 +1,4 @@
 import DiscreteSliderMarks from "./Slider.js";
-import DeleteForeverIcon from "@mui/icons-material/DeleteForever";
 import style from "./card.module.css";
 import CardMedia from "@mui/material/CardMedia";
 import { DeleteForever } from "@mui/icons-material";

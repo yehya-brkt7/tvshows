@@ -1,8 +1,5 @@
 import React, { useState } from "react";
 import style from "./table.module.css";
-import CardMedia from "@mui/material/CardMedia";
-
-import axios from "axios";
 import useStore from "../Store/Store";
 import { Grid } from "@mui/material";
 import HorizontalCard from "./Card";

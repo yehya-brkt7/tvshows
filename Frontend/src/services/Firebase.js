@@ -3,14 +3,7 @@
 import firebase from "firebase/compat/app";
 import "firebase/compat/auth";
 import "firebase/compat/firestore";
-import {
-  getFirestore,
-  collection,
-  addDoc,
-  where,
-  query,
-  getDocs,
-} from "firebase/firestore";
+import { getFirestore } from "firebase/firestore";
 import { GoogleAuthProvider } from "firebase/auth";
 
 // Import the functions you need from the SDKs you need

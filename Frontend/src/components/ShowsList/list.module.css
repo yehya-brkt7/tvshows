@@ -101,7 +101,7 @@
 .search {
   color: white;
   align-self: flex-end;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   margin-right: 10px;
 }
 
@@ -112,10 +112,31 @@
   font-size: 30px;
 }
 
+.searchbutton {
+  margin-bottom: 32px;
+}
 .searchcontainer {
   display: flex;
+  align-items: center;
   padding-left: 0px;
   padding-right: 20px;
   margin-top: 5px;
   margin-bottom: 50px;
+}
+
+.dropdown {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid gray;
+}
+
+.dropdown:empty {
+  border: none;
+}
+
+.dropdownrow {
+  cursor: pointer;
+  text-align: start;
+  margin: 2px 0;
 }

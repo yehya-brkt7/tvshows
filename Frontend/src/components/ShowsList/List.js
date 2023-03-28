@@ -7,7 +7,6 @@ import { auth } from "../../services/Firebase"; // update path to your firestore
 import { useNavigate } from "react-router-dom";
 import style from "./list.module.css";
 import Toolbar from "@mui/material/Toolbar";
-// import SearchIcon from "@material-ui/icons/Search";
 import SearchIcon from "@mui/icons-material/Search";
 import TextField from "@mui/material/TextField";
 import axios from "axios";
@@ -24,17 +23,9 @@ const List = ({
   Id,
   setId,
 }) => {
-  const {
-    fetch,
-    shows,
-    user,
-    setUser,
-    setUserid,
-    userid,
-    token,
-    userName,
-    setUserName,
-  } = useStore((state) => state);
+  const { fetch, shows, user, userid, setUserName } = useStore(
+    (state) => state
+  );
 
   const navigate = useNavigate();
 
@@ -51,12 +42,6 @@ const List = ({
   }, [user]);
 
   const url = "Shows.Json";
-
-  const [filter, setFilter] = useState("");
-
-  const handleSearchChange = (e) => {
-    setFilter(e.target.value);
-  };
 
   const [sortedShows, setSortedshows] = useState([]);
   useEffect(() => {
@@ -88,10 +73,15 @@ const List = ({
     navigate("/mylist");
   };
 
-  useEffect(() => {
-    const check = localStorage.getItem("userid");
-    if (check == "") navigate("/");
-  }, [userid]);
+  const [filter, setFilter] = useState("");
+
+  const handleSearchChange = (e) => {
+    setFilter(e.target.value);
+  };
+
+  const onSearch = (searchTerm) => {
+    setFilter(searchTerm);
+  };
 
   return (
     <>
