@@ -10,7 +10,7 @@ const getShows = async (req, res) => {
     const shows = await Show.find({ usid: usid }).sort({ createdAt: -1 });
 
     res.status(200).json(shows);
-  } catch (error) {
+  } catch (err) {
     res.status(400).json({ err: err.message });
   }
 };
