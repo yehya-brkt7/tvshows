@@ -51,6 +51,7 @@ function App() {
       .request(config)
       .then((response) => {
         console.log("id", userid, "data", JSON.stringify(response.data));
+        setPickedList(response.data);
       })
       .catch((error) => {
         console.log(error);
