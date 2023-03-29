@@ -39,7 +39,6 @@ const DiscreteSliderMarks = ({ index, frating, setRating }) => {
         getAriaValueText={valuetext}
         step={0.1}
         valueLabelDisplay="auto"
-        marks={marks}
         max={10}
         value={frating}
         onChange={(event) => {

@@ -18,6 +18,10 @@ const MyList = (props) => {
   const back = () => {
     navigate("/list");
   };
+
+  const share = () => {
+    window.open("/sharedlist", "_blank");
+  };
   return (
     <Grid container justifyContent="center">
       <Grid item xs={11}>
@@ -25,7 +29,7 @@ const MyList = (props) => {
       </Grid>
       <Grid item xs={1}>
         <Avatar sx={{ bgcolor: deepOrange[500], marginTop: "25px" }}>
-          {pickedList.filter((l) => l.usid === userid).length}
+          {pickedList.length}
         </Avatar>
       </Grid>
 
@@ -39,6 +43,14 @@ const MyList = (props) => {
               target="_blank"
             >
               <span className={style.google}>Return</span>
+            </a>
+            <a
+              onClick={share}
+              className={`${style.btn} ${style.effect04}`}
+              data-sm-link-text="With friends"
+              target="_blank"
+            >
+              <span className={style.google}>Share List</span>
             </a>
           </div>
         </div>

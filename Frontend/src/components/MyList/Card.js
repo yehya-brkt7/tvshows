@@ -86,6 +86,7 @@ const HorizontalCard = ({
               <Grid item xs={5}>
                 {title}
               </Grid>
+
               <Grid item xs={3}>
                 <DeleteForever
                   sx={{ bgcolor: deepOrange[500] }}

@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from "react";
-import style from "./table.module.css";
+import React, { useState } from "react";
+import style from "./sharedtable.module.css";
 import useStore from "../Store/Store";
 import { Grid } from "@mui/material";
-import HorizontalCard from "./Card";
+import SharedHorizontalCard from "./SharedCard";
 
-const Table = (props) => {
+const SharedTable = (props) => {
   const { pickedList, showadded, setShowadded } = props;
 
   const { userid } = useStore((state) => state);
@@ -30,12 +30,12 @@ const Table = (props) => {
   return (
     <Grid container className={style.tablecontainer}>
       {pickedList
-        // .filter((l) => l.usid === userid)
+
         .sort((l, b) => b.fanrating - l.fanrating)
         .map((l, index) => {
           return (
-            <Grid item xs={10} sm={5} md={4} lg={2.2} key={index}>
-              <HorizontalCard
+            <Grid item xs={10} sm={5} md={4} lg={2.2}>
+              <SharedHorizontalCard
                 index={index}
                 title={l.title}
                 rating={l.rating}
@@ -54,4 +54,4 @@ const Table = (props) => {
   );
 };
 
-export default React.memo(Table);
+export default React.memo(SharedTable);

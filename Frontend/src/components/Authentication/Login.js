@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import style from "./login.module.css";
 import Grid from "@mui/material/Grid";
 import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
@@ -8,8 +8,10 @@ import bg from "../../assets/bg.jpg";
 import useStore from "../Store/Store";
 import axios from "axios";
 
-const Login = (props) => {
-  const { setToken, setUser, setUserid } = useStore((state) => state);
+const Login = ({ setPickedList }) => {
+  const { setToken, setUser, setUserid, setUserName } = useStore(
+    (state) => state
+  );
   const navigate = useNavigate();
 
   const googleHandler = async (e) => {
@@ -35,6 +37,9 @@ const Login = (props) => {
           })
           .then(() => {
             setUserid(user.uid);
+            setUserName(user.displayName);
+
+            localStorage.setItem("isLoggedin", true);
           });
 
         navigate("/list");

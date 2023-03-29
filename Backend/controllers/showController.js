@@ -4,11 +4,15 @@ const User = require("../models/userModel");
 const mongoose = require("mongoose");
 //get all shows
 const getShows = async (req, res) => {
-  const usid = req.body;
+  const usid = req.body.usid;
 
-  const shows = await Show.find(usid).sort({ createdAt: -1 });
+  try {
+    const shows = await Show.find({ usid: usid }).sort({ createdAt: -1 });
 
-  res.status(200).json(shows);
+    res.status(200).json(shows);
+  } catch (error) {
+    res.status(400).json({ err: err.message });
+  }
 };
 
 //post one show

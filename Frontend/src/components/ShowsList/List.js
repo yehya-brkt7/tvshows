@@ -34,8 +34,6 @@ const List = ({
   const navigate = useNavigate();
 
   useEffect(() => {
-    setUserName(user.displayName);
-
     axios
       .get("https://trackyourseries.onrender.com/apis/user", {
         uid: userid,
@@ -43,9 +41,9 @@ const List = ({
       .then((res) => {});
   }, [user]);
 
-  const url = "Shows.Json";
-
   const [sortedShows, setSortedshows] = useState([]);
+
+  const url = "Shows.Json";
   useEffect(() => {
     fetch(url);
   }, []);
@@ -61,6 +59,8 @@ const List = ({
     signOut(auth)
       .then(() => {
         navigate("/");
+        setPickedList([]);
+        localStorage.removeItem("isLoggedin");
       })
       .catch((error) => {});
   };
@@ -79,9 +79,9 @@ const List = ({
     setFilter(e.target.value);
   };
 
-  const onSearch = (searchTerm) => {
-    setFilter(searchTerm);
-  };
+  // window.addEventListener("beforeunload", (ev) => {
+  //   setPickedList([]);
+  // });
 
   return (
     <>

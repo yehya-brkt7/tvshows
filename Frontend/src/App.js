@@ -3,6 +3,7 @@ import "./App.css";
 // import List from "./components/ShowsList/List";
 import Login from "./components/Authentication/Login";
 import MyList from "./components/MyList/Mylist";
+import SharedList from "./components/SharedList/SharedList";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import axios from "axios";
 import useStore from "./components/Store/Store";
@@ -22,16 +23,20 @@ function App() {
   useEffect(() => {
     axios
       .get("https://trackyourseries.onrender.com/apis/shows", {
-        usid: userid,
+        data: {
+          usid: userid,
+        },
       })
       .then((res) => {
+        console.log("id", userid);
+        console.log("ha", res.data);
         setPickedList(res.data);
       })
       .catch((err) => {});
 
     axios
       .get("https://trackyourseries.onrender.com/apis/disabledarr", {
-        usid: userid,
+        data: { usid: userid },
       })
       .then((res) => {
         setIds(res.data);
@@ -39,11 +44,12 @@ function App() {
       .catch((err) => {});
   }, [showadded, userid]);
 
+  const isLoggedin = localStorage.getItem("isLoggedin");
   return (
     <div className="App">
       <Router>
         <Routes>
-          <Route path="/" element={<Login />} />
+          <Route path="/" element={<Login setPickedList={setPickedList} />} />
           <Route
             path="/list"
             element={
@@ -61,7 +67,7 @@ function App() {
                   />
                 </React.Suspense>
               ) : (
-                <Login />
+                <Login setPickedList={setPickedList} />
               )
             }
           />
@@ -79,8 +85,22 @@ function App() {
                   setIds={setIds}
                 />
               ) : (
-                <Login />
+                <Login setPickedList={setPickedList} />
               )
+            }
+          />
+          <Route
+            path="/sharedlist"
+            element={
+              <SharedList
+                pickedList={pickedList}
+                Id={Id}
+                setId={setId}
+                showadded={showadded}
+                setShowadded={setShowadded}
+                ids={ids}
+                setIds={setIds}
+              />
             }
           />
         </Routes>
