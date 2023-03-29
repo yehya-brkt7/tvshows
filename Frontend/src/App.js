@@ -22,11 +22,7 @@ function App() {
 
   useEffect(() => {
     axios
-      .get("https://trackyourseries.onrender.com/apis/shows", {
-        data: {
-          usid: userid,
-        },
-      })
+      .get("https://trackyourseries.onrender.com/apis/shows")
       .then((res) => {
         console.log("id", userid);
         console.log("ha", res.data);
@@ -35,9 +31,7 @@ function App() {
       .catch((err) => {});
 
     axios
-      .get("https://trackyourseries.onrender.com/apis/disabledarr", {
-        data: { usid: userid },
-      })
+      .get("https://trackyourseries.onrender.com/apis/disabledarr")
       .then((res) => {
         setIds(res.data);
       })

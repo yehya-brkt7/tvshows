@@ -7,7 +7,7 @@ const getShows = async (req, res) => {
   const usid = req.body.usid;
 
   try {
-    const shows = await Show.find({ usid: usid }).sort({ createdAt: -1 });
+    const shows = await Show.find(usid).sort({ createdAt: -1 });
 
     res.status(200).json(shows);
   } catch (error) {
