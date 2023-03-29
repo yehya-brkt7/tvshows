@@ -21,17 +21,47 @@ function App() {
   const [Id, setId] = useState();
 
   useEffect(() => {
-    axios
-      .get("https://trackyourseries.onrender.com/apis/shows")
-      .then((res) => {
-        console.log("id", userid);
-        console.log("ha", res.data);
-        setPickedList(res.data);
-      })
-      .catch((err) => {});
+    // axios;
+    // .get("https://trackyourseries.onrender.com/apis/shows", {
+    //   params: {
+    //     usid: userid,
+    //   },
+    // })
+    // .then((res) => {
+    //   console.log("id", userid);
+    //   console.log("ha", res.data);
+    //   setPickedList(res.data);
+    // })
+    // .catch((err) => {});
+    let data = JSON.stringify({
+      usid: userid,
+    });
+
+    let config = {
+      method: "get",
+      maxBodyLength: Infinity,
+      url: "https://trackyourseries.onrender.com/apis/shows",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      data: data,
+    };
 
     axios
-      .get("https://trackyourseries.onrender.com/apis/disabledarr")
+      .request(config)
+      .then((response) => {
+        console.log("id", userid, "data", JSON.stringify(response.data));
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+
+    axios
+      .get("https://trackyourseries.onrender.com/apis/disabledarr", {
+        params: {
+          usid: userid,
+        },
+      })
       .then((res) => {
         setIds(res.data);
       })
