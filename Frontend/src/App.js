@@ -33,24 +33,21 @@ function App() {
     //   setPickedList(res.data);
     // })
     // .catch((err) => {});
-    let data = JSON.stringify({
-      usid: userid,
-    });
+    const axios = require("axios");
+    let data = "";
 
     let config = {
       method: "get",
       maxBodyLength: Infinity,
-      url: "https://trackyourseries.onrender.com/apis/shows",
-      headers: {
-        "Content-Type": "application/json",
-      },
+      url: "https://trackyourseries.onrender.com/apis/shows/" + userid,
+      headers: {},
       data: data,
     };
 
     axios
       .request(config)
       .then((response) => {
-        console.log("id", userid, "data", JSON.stringify(response.data));
+        console.log(response.data);
         setPickedList(response.data);
       })
       .catch((error) => {
