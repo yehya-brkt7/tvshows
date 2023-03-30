@@ -10,7 +10,7 @@ const {
 const router = express.Router();
 
 //get all shows
-router.get("/", getShows);
+router.get("/:usid", getShows);
 
 //post one show
 router.post("/", createShow);

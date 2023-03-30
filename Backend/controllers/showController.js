@@ -4,7 +4,7 @@ const User = require("../models/userModel");
 const mongoose = require("mongoose");
 //get all shows
 const getShows = async (req, res) => {
-  const usid = req.body.usid;
+  const usid = req.params.usid;
 
   try {
     const shows = await Show.find({ usid: usid }).sort({ createdAt: -1 });
