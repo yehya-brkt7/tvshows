@@ -4,7 +4,7 @@ import style from "./card.module.css";
 import CardMedia from "@mui/material/CardMedia";
 import { DeleteForever } from "@mui/icons-material";
 import { Grid } from "@mui/material";
-import { deepOrange, deepPurple } from "@mui/material/colors";
+import { deepOrange } from "@mui/material/colors";
 import Avatar from "@mui/material/Avatar";
 import axios from "axios";
 import useStore from "../Store/Store.js";

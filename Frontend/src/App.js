@@ -1,13 +1,11 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
-// import List from "./components/ShowsList/List";
 import Login from "./components/Authentication/Login";
 import MyList from "./components/MyList/Mylist";
 import SharedList from "./components/SharedList/SharedList";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import axios from "axios";
 import useStore from "./components/Store/Store";
-//test
 
 const LazyList = React.lazy(() => import("./components/ShowsList/List"));
 function App() {
@@ -21,18 +19,6 @@ function App() {
   const [Id, setId] = useState();
 
   useEffect(() => {
-    // axios;
-    // .get("https://trackyourseries.onrender.com/apis/shows", {
-    //   params: {
-    //     usid: userid,
-    //   },
-    // })
-    // .then((res) => {
-    //   console.log("id", userid);
-    //   console.log("ha", res.data);
-    //   setPickedList(res.data);
-    // })
-    // .catch((err) => {});
     const axios = require("axios");
     let data = "";
 
@@ -47,12 +33,11 @@ function App() {
     axios
       .request(config)
       .then((response) => {
-        console.log(response.data);
         setPickedList(response.data);
       })
-      .catch((error) => {
-        console.log(error);
-      });
+      .catch((error) => {});
+
+    ////////////////////////////////////////
 
     axios
       .get("https://trackyourseries.onrender.com/apis/disabledarr", {
@@ -66,7 +51,6 @@ function App() {
       .catch((err) => {});
   }, [showadded, userid]);
 
-  const isLoggedin = localStorage.getItem("isLoggedin");
   return (
     <div className="App">
       <Router>

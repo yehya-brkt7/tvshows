@@ -20,7 +20,7 @@ const MyList = (props) => {
   };
 
   const share = () => {
-    window.open("/sharedlist", "_blank");
+    navigate("/sharedlist");
   };
   return (
     <Grid container justifyContent="center">

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import style from "./sharedtable.module.css";
 import useStore from "../Store/Store";
 import { Grid } from "@mui/material";
@@ -26,6 +26,10 @@ const SharedTable = (props) => {
       verticalAlign: "sub",
     },
   };
+
+  useEffect(() => {
+    console.log("picked", pickedList);
+  }, []);
 
   return (
     <Grid container className={style.tablecontainer}>
