@@ -33,9 +33,7 @@ const Login = ({ setPickedList }) => {
 
         axios
           .post("https://trackyourseries.onrender.com/apis/user", {
-            data: {
-              uid: user.uid,
-            },
+            uid: user.uid,
           })
           .then(() => {
             setUserid(user.uid);
