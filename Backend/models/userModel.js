@@ -8,7 +8,7 @@ const userSchema = new Schema(
       type: String,
       unique: true,
     },
-    list: [{ type: Schema.Types.ObjectId, ref: "List" }],
+    // list: [{ type: Schema.Types.ObjectId, ref: "List" }],
   },
   { timestamps: true }
 );
