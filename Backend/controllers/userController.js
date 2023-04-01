@@ -1,4 +1,5 @@
 const User = require("../models/userModel");
+const List = require("../models/userModel");
 const mongoose = require("mongoose");
 
 //post one show
@@ -17,15 +18,17 @@ const addUser = async (req, res) => {
 
 //get one user
 const getUser = async (req, res) => {
-  const { uid } = req.body;
+  const { uid } = req.params.uid;
 
   try {
-    const user = await User.findOne({ uid: uid });
+    const user = await User.findOne({ uid: uid }).populate("list");
     res.status(200).json(user);
   } catch (err) {
     res.status(400).json({ err: err.message });
   }
 };
+
+//get List of user
 
 module.exports = {
   addUser,

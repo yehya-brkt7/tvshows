@@ -4,7 +4,7 @@ const express = require("express");
 const showRoutes = require("./routes/shows");
 const disabledRoutes = require("./routes/disabledarr");
 const userRoutes = require("./routes/user");
-const listRoutes = require("./routes/sharedlist");
+
 const mongoose = require("mongoose");
 
 //express app
@@ -12,7 +12,6 @@ const showsapp = express();
 
 //Cors
 var cors = require("cors");
-const sharedlistModel = require("./models/sharedlistModel");
 const corsOptions = {
   origin: "*",
   credentials: true, //access-control-allow-credentials:true
@@ -36,7 +35,6 @@ showsapp.use((req, res, next) => {
 showsapp.use("/apis/shows", showRoutes);
 showsapp.use("/apis/disabledarr", disabledRoutes);
 showsapp.use("/apis/user", userRoutes);
-showsapp.use("/apis/sharedlist", listRoutes);
 
 //connect to db
 mongoose

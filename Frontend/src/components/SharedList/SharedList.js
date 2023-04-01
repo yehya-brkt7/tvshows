@@ -2,15 +2,17 @@ import React, { useEffect } from "react";
 import { Grid } from "@mui/material";
 import SharedTable from "./SharedTable.js";
 import useStore from "../Store/Store";
-import { deepOrange, deepPurple } from "@mui/material/colors";
+import { deepOrange } from "@mui/material/colors";
 import Avatar from "@mui/material/Avatar";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import style from "./sharedtable.module.css";
 
 const SharedList = (props) => {
-  const { pickedList, showadded, setShowadded } = props;
+  const { showadded, setShowadded } = props;
 
   const { userName, userid } = useStore((state) => state);
+
+  const pickedList = useLocation().state.pickedList;
 
   const navigate = useNavigate();
 

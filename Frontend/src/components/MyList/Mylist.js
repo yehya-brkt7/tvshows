@@ -9,7 +9,7 @@ import { deepOrange, deepPurple } from "@mui/material/colors";
 import Avatar from "@mui/material/Avatar";
 
 const MyList = (props) => {
-  const { pickedList, Id, setId, showadded, setShowadded, ids, setIds } = props;
+  const { pickedList, showadded, setShowadded } = props;
 
   const { userName, userid } = useStore((state) => state);
 
@@ -20,7 +20,9 @@ const MyList = (props) => {
   };
 
   const share = () => {
-    navigate("/sharedlist");
+    navigate("/sharedlist/" + userid, {
+      state: { pickedList },
+    });
   };
   return (
     <Grid container justifyContent="center">

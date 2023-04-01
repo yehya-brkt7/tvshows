@@ -83,12 +83,8 @@ function App() {
               userid != "" ? (
                 <MyList
                   pickedList={pickedList}
-                  Id={Id}
-                  setId={setId}
                   showadded={showadded}
                   setShowadded={setShowadded}
-                  ids={ids}
-                  setIds={setIds}
                 />
               ) : (
                 <Login setPickedList={setPickedList} />
@@ -96,17 +92,9 @@ function App() {
             }
           />
           <Route
-            path="/sharedlist"
+            path="/sharedlist/:userid"
             element={
-              <SharedList
-                pickedList={pickedList}
-                Id={Id}
-                setId={setId}
-                showadded={showadded}
-                setShowadded={setShowadded}
-                ids={ids}
-                setIds={setIds}
-              />
+              <SharedList showadded={showadded} setShowadded={setShowadded} />
             }
           />
         </Routes>
