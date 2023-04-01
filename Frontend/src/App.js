@@ -55,7 +55,12 @@ function App() {
     <div className="App">
       <Router>
         <Routes>
-          <Route path="/" element={<Login setPickedList={setPickedList} />} />
+          <Route
+            path="/"
+            element={
+              <Login showadded={showadded} setShowadded={setShowadded} />
+            }
+          />
           <Route
             path="/list"
             element={
@@ -73,7 +78,7 @@ function App() {
                   />
                 </React.Suspense>
               ) : (
-                <Login setPickedList={setPickedList} />
+                <Login showadded={showadded} setShowadded={setShowadded} />
               )
             }
           />
@@ -87,7 +92,7 @@ function App() {
                   setShowadded={setShowadded}
                 />
               ) : (
-                <Login setPickedList={setPickedList} />
+                <Login showadded={showadded} setShowadded={setShowadded} />
               )
             }
           />

@@ -1,14 +1,18 @@
 import React, { useEffect } from "react";
 import style from "./login.module.css";
 import Grid from "@mui/material/Grid";
-import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+import {
+  signInWithPopup,
+  GoogleAuthProvider,
+  getAdditionalUserInfo,
+} from "firebase/auth";
 import { auth, provider } from "../../services/Firebase"; // update path to your firestore config
 import { useNavigate } from "react-router-dom";
 import bg from "../../assets/bg.jpg";
 import useStore from "../Store/Store";
 import axios from "axios";
 
-const Login = ({ setPickedList }) => {
+const Login = ({ showadded, setShowadded }) => {
   const { setToken, setUser, setUserid, setUserName } = useStore(
     (state) => state
   );
@@ -31,24 +35,35 @@ const Login = ({ setPickedList }) => {
 
         setUser(user);
 
-        axios
-          .post("https://trackyourseries.onrender.com/apis/user", {
-            uid: user.uid,
-          })
-          .then(() => {
-            setUserid(user.uid);
-            setUserName(user.displayName);
-            console.log("loggedin succesfully");
+        //if user is new
+        if (getAdditionalUserInfo(result).isNewUser) {
+          axios
+            .post("https://trackyourseries.onrender.com/apis/user", {
+              uid: user.uid,
+            })
+            .then(() => {
+              setUserid(user.uid);
+              setUserName(user.displayName);
+              setShowadded(!showadded);
 
-            localStorage.setItem("isLoggedin", true);
-          })
-          .catch((err) => {
-            console.log("error", err);
-          });
+              navigate("/list");
+            })
+            .catch((err) => {
+              console.log("error", err);
+            });
+        }
 
-        navigate("/list");
-
-        // redux action? --> dispatch({ type: SET_USER, user });
+        //if user already exists
+        else {
+          axios
+            .get("https://trackyourseries.onrender.com/apis/user/" + user.uid)
+            .then((res) => {
+              console.log("response", res.data[0].uid);
+              setUserid(res.data[0].uid);
+              setShowadded(!showadded);
+              navigate("/list");
+            });
+        }
       })
       .catch((error) => {
         // Handle Errors here.
