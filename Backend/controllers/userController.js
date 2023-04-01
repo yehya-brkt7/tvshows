@@ -32,7 +32,7 @@ const updateList = async (req, res) => {
   const uid = req.params.uid;
 
   try {
-    const user = await User.findByIdAndUpdate(
+    const user = await User.findOneAndUpdate(
       { uid: uid },
       {
         $push: { list: { Object } },

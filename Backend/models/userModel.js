@@ -15,8 +15,13 @@ const userSchema = new Schema(
 const listSchema = new Schema({
   list: {
     type: Array,
+    default: [],
   },
 });
 
-module.exports = mongoose.model("User", userSchema);
-module.exports = mongoose.model("List", listSchema);
+const User = mongoose.model("User", userSchema);
+
+const List = mongoose.model("List", listSchema);
+
+module.exports = List;
+module.exports = User;

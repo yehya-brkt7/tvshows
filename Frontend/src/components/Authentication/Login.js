@@ -40,6 +40,7 @@ const Login = ({ showadded, setShowadded }) => {
           axios
             .post("https://trackyourseries.onrender.com/apis/user", {
               uid: user.uid,
+              list: [],
             })
             .then(() => {
               setUserid(user.uid);
