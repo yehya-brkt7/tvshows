@@ -33,13 +33,19 @@ const Login = ({ setPickedList }) => {
 
         axios
           .post("https://trackyourseries.onrender.com/apis/user", {
-            uid: user.uid,
+            data: {
+              uid: user.uid,
+            },
           })
           .then(() => {
             setUserid(user.uid);
             setUserName(user.displayName);
+            console.log("loggedin succesfully");
 
             localStorage.setItem("isLoggedin", true);
+          })
+          .catch((err) => {
+            console.log("error", err);
           });
 
         navigate("/list");

@@ -6,7 +6,6 @@ const userSchema = new Schema(
   {
     uid: {
       type: String,
-      unique: true,
     },
     // list: [{ type: Schema.Types.ObjectId, ref: "List" }],
   },
