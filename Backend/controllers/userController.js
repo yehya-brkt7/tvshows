@@ -1,5 +1,5 @@
 const User = require("../models/userModel");
-const List = require("../models/userModel");
+// const List = require("../models/userModel");
 const mongoose = require("mongoose");
 
 //post one show
