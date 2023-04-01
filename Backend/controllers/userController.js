@@ -21,7 +21,7 @@ const getUser = async (req, res) => {
   const { uid } = req.params.uid;
 
   try {
-    const user = await User.findOne({ uid: uid }).populate("list");
+    const user = await User.find({ uid: uid }).populate("list");
     res.status(200).json(user);
   } catch (err) {
     res.status(400).json({ err: err.message });
