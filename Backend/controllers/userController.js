@@ -18,7 +18,7 @@ const addUser = async (req, res) => {
 
 //get one user
 const getUser = async (req, res) => {
-  const { uid } = req.params.uid;
+  const uid = req.params.uid;
 
   try {
     const user = await User.find({ uid: uid });
