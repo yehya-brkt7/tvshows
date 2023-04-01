@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 
 //post one show
 const addUser = async (req, res) => {
-  const { uid } = req.params.uid;
+  const { uid } = req.body.uid;
 
   //add to db
   try {
