@@ -95,10 +95,10 @@ const Login = ({ setPickedList }) => {
                 <a
                   onClick={googleHandler}
                   className={`${style.btn} ${style.effect04}`}
-                  data-sm-link-text="LOGIN"
+                  data-sm-link-text="with google"
                   target="_blank"
                 >
-                  <span className={style.google}>Google</span>
+                  <span className={style.google}>Login</span>
                 </a>
               </div>
             </div>
