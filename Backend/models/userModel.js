@@ -13,11 +13,11 @@ const userSchema = new Schema(
   { timestamps: true }
 );
 
-const listSchema = new Schema({
-  list: {
-    type: Array,
-  },
-});
+// const listSchema = new Schema({
+//   list: {
+//     type: Array,
+//   },
+// });
 
 module.exports = mongoose.model("User", userSchema);
-module.exports = mongoose.model("List", listSchema);
+// module.exports = mongoose.model("List", listSchema);
