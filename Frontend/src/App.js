@@ -7,13 +7,12 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import axios from "axios";
 import useStore from "./components/Store/Store";
 import { disableReactDevTools } from "@fvilers/disable-react-devtools";
+import { GlobalDebug } from "./utils/consoleremove";
 
 const LazyList = React.lazy(() => import("./components/ShowsList/List"));
 
 if (process.env.REACT_APP_NODE_ENV != "development") {
-  console.log = () => {};
-  console.error = () => {};
-  console.debug = () => {};
+  GlobalDebug(false);
 
   disableReactDevTools();
 }
