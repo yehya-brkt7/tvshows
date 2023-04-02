@@ -6,8 +6,18 @@ import SharedList from "./components/SharedList/SharedList";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import axios from "axios";
 import useStore from "./components/Store/Store";
+import { disableReactDevTools } from "@fvilers/disable-react-devtools";
 
 const LazyList = React.lazy(() => import("./components/ShowsList/List"));
+
+if (process.env.REACT_APP_NODE_ENV != "development") {
+  console.log = () => {};
+  console.error = () => {};
+  console.debug = () => {};
+
+  disableReactDevTools();
+}
+
 function App() {
   const { userid } = useStore((state) => state);
   const [pickedList, setPickedList] = useState([]);
