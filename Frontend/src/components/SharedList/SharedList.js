@@ -5,6 +5,7 @@ import { deepOrange } from "@mui/material/colors";
 import Avatar from "@mui/material/Avatar";
 import { useNavigate, useLocation, useParams } from "react-router-dom";
 import style from "./sharedtable.module.css";
+import { ShareSocial } from "react-share-social";
 
 const SharedList = (props) => {
   const params = useParams();
@@ -39,6 +40,10 @@ const SharedList = (props) => {
     navigate("/mylist");
   };
 
+  const location = useLocation();
+
+  const url = "https://trackyourseries.vercel.app/" + location.pathname;
+
   return (
     <Grid container justifyContent="center">
       <Grid item xs={11}>
@@ -50,6 +55,14 @@ const SharedList = (props) => {
           {pickedList.length}
         </Avatar>
       </Grid>
+      <Grid item xs={10} sm={8} md={6}>
+        <h4 className={style.header}>Share it with your friends</h4>
+        <ShareSocial
+          url={url}
+          socialTypes={["facebook", "twitter", "reddit", "whatsapp"]}
+        />
+      </Grid>
+
       <Grid item xs={12} marginTop="50px">
         <a
           onClick={back}
