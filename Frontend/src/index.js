@@ -4,13 +4,14 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
-if (process.env.NODE_ENV === "production") {
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+if (process.env.NODE_ENV != "development") {
   console.log = () => {};
   console.error = () => {};
   console.debug = () => {};
 }
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <App />
