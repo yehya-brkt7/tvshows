@@ -13,18 +13,7 @@ const styles = {
   },
 };
 
-const SharedHorizontalCard = ({
-  index,
-  title,
-  rating,
-  fanrating,
-  image,
-  frating,
-  setRating,
-  showadded,
-  setShowadded,
-  id,
-}) => {
+const SharedHorizontalCard = ({ index, title, rating, fanrating, image }) => {
   const { userName } = useStore((state) => state);
 
   const playSound = () => {

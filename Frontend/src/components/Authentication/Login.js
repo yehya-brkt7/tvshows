@@ -49,9 +49,7 @@ const Login = ({ showadded, setShowadded }) => {
 
               navigate("/list");
             })
-            .catch((err) => {
-              console.log("error", err);
-            });
+            .catch((err) => {});
         }
 
         //if user already exists
@@ -59,7 +57,6 @@ const Login = ({ showadded, setShowadded }) => {
           axios
             .get("https://trackyourseries.onrender.com/apis/user/" + user.uid)
             .then((res) => {
-              console.log("response", res.data[0].uid);
               setUserid(res.data[0].uid);
               setUserName(user.data[0].name);
               setShowadded(!showadded);

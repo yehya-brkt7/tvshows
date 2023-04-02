@@ -3,7 +3,6 @@ import { Grid } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import style from "./table.module.css";
 import Table from "./Table.js";
-import axios from "axios";
 import useStore from "../Store/Store";
 import { deepOrange, deepPurple } from "@mui/material/colors";
 import Avatar from "@mui/material/Avatar";
@@ -20,9 +19,7 @@ const MyList = (props) => {
   };
 
   const share = () => {
-    navigate("/sharedlist/" + userid, {
-      state: { pickedList },
-    });
+    navigate("/sharedlist/" + userid + "/" + userName);
   };
   return (
     <Grid container justifyContent="center">

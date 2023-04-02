@@ -96,12 +96,7 @@ function App() {
               )
             }
           />
-          <Route
-            path="/sharedlist/:userid"
-            element={
-              <SharedList showadded={showadded} setShowadded={setShowadded} />
-            }
-          />
+          <Route path="/sharedlist/:userid/:name" element={<SharedList />} />
         </Routes>
       </Router>
     </div>

@@ -1,20 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { Grid } from "@mui/material";
 import SharedTable from "./SharedTable.js";
-import useStore from "../Store/Store";
 import { deepOrange } from "@mui/material/colors";
 import Avatar from "@mui/material/Avatar";
 import { useNavigate, useLocation, useParams } from "react-router-dom";
 import style from "./sharedtable.module.css";
 
 const SharedList = (props) => {
-  const { showadded, setShowadded } = props;
-
-  const { userName, userid } = useStore((state) => state);
-
   const params = useParams();
 
-  // const pickedList = useLocation().state.pickedList;
   const [pickedList, setPickedList] = useState([]);
 
   useEffect(() => {
@@ -48,7 +42,7 @@ const SharedList = (props) => {
   return (
     <Grid container justifyContent="center">
       <Grid item xs={11}>
-        <h1>Welcome to {userName}'s list</h1>
+        <h1>Welcome to {params.name}'s list</h1>
       </Grid>
 
       <Grid item xs={1}>
@@ -68,11 +62,7 @@ const SharedList = (props) => {
       </Grid>
 
       <Grid item xs={12} sm={12} marginTop="50px">
-        <SharedTable
-          pickedList={pickedList}
-          showadded={showadded}
-          setShowadded={setShowadded}
-        />
+        <SharedTable pickedList={pickedList} />
       </Grid>
     </Grid>
   );

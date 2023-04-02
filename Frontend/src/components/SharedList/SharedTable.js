@@ -1,35 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import style from "./sharedtable.module.css";
-import useStore from "../Store/Store";
 import { Grid } from "@mui/material";
 import SharedHorizontalCard from "./SharedCard";
 
 const SharedTable = (props) => {
-  const { pickedList, showadded, setShowadded } = props;
-
-  const { userid } = useStore((state) => state);
-
-  const [frating, setRating] = useState();
-
-  const styles = {
-    media: {
-      objectFit: "fill",
-      width: "120px",
-      height: "90px",
-      border: "1px solid black",
-
-      marginTop: "10px",
-    },
-    labels: {
-      fontWeight: "bold",
-      textAlign: "center",
-      verticalAlign: "sub",
-    },
-  };
-
-  useEffect(() => {
-    console.log("picked", pickedList);
-  }, []);
+  const { pickedList } = props;
 
   return (
     <Grid container className={style.tablecontainer}>
@@ -45,11 +20,6 @@ const SharedTable = (props) => {
                 rating={l.rating}
                 fanrating={l.fanrating}
                 image={l.image}
-                setRating={setRating}
-                frating={frating}
-                showadded={showadded}
-                setShowadded={setShowadded}
-                id={l.id}
               />
             </Grid>
           );

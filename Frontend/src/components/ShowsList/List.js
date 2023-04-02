@@ -1,9 +1,8 @@
-import React, { useEffect, useState, Suspense, useRef } from "react";
-// import ShowCard from "../Card/ShowCard";
+import React, { useEffect, useState } from "react";
 import useStore from "../Store/Store";
 import Grid from "@mui/material/Grid";
 import { signOut } from "firebase/auth";
-import { auth } from "../../services/Firebase"; // update path to your firestore config
+import { auth } from "../../services/Firebase";
 import { useNavigate } from "react-router-dom";
 import style from "./list.module.css";
 import Toolbar from "@mui/material/Toolbar";
@@ -14,8 +13,6 @@ import SkeletonCard from "./Skeleton";
 import Avatar from "@mui/material/Avatar";
 
 const LazyCard = React.lazy(() => import("../Card/ShowCard"));
-
-// const ShowCard = React.lazy(() => import("../Card/ShowCard"));
 
 const List = ({
   pickedList,
@@ -78,10 +75,6 @@ const List = ({
   const handleSearchChange = (e) => {
     setFilter(e.target.value);
   };
-
-  // window.addEventListener("beforeunload", (ev) => {
-  //   setPickedList([]);
-  // });
 
   return (
     <>
