@@ -1,10 +1,10 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Grid } from "@mui/material";
 import SharedTable from "./SharedTable.js";
 import useStore from "../Store/Store";
 import { deepOrange } from "@mui/material/colors";
 import Avatar from "@mui/material/Avatar";
-import { useNavigate, useLocation } from "react-router-dom";
+import { useNavigate, useLocation, useParams } from "react-router-dom";
 import style from "./sharedtable.module.css";
 
 const SharedList = (props) => {
@@ -12,7 +12,32 @@ const SharedList = (props) => {
 
   const { userName, userid } = useStore((state) => state);
 
-  const pickedList = useLocation().state.pickedList;
+  const params = useParams();
+
+  // const pickedList = useLocation().state.pickedList;
+  const [pickedList, setPickedList] = useState([]);
+
+  useEffect(() => {
+    const axios = require("axios");
+    let data = "";
+
+    let config = {
+      method: "get",
+      maxBodyLength: Infinity,
+      url: "https://trackyourseries.onrender.com/apis/shows/" + params.userid,
+      headers: {},
+      data: data,
+    };
+
+    axios
+      .request(config)
+      .then((response) => {
+        setPickedList(response.data);
+      })
+      .catch((error) => {});
+
+    ////////////////////////////////////////
+  }, []);
 
   const navigate = useNavigate();
 

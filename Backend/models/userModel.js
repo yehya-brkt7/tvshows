@@ -7,21 +7,13 @@ const userSchema = new Schema(
     uid: {
       type: String,
     },
-    list: [{ type: Schema.Types.ObjectId, ref: "List" }],
+    name: {
+      type: String,
+    },
   },
   { timestamps: true }
 );
 
-const listSchema = new Schema({
-  list: {
-    type: Array,
-    default: [],
-  },
-});
-
 const User = mongoose.model("User", userSchema);
 
-const List = mongoose.model("List", listSchema);
-
-module.exports = List;
 module.exports = User;
