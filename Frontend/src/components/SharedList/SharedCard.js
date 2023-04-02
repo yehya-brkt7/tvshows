@@ -13,9 +13,14 @@ const styles = {
   },
 };
 
-const SharedHorizontalCard = ({ index, title, rating, fanrating, image }) => {
-  const { userName } = useStore((state) => state);
-
+const SharedHorizontalCard = ({
+  index,
+  title,
+  rating,
+  fanrating,
+  image,
+  uname,
+}) => {
   const playSound = () => {
     new Audio(Click).play();
   };
@@ -49,7 +54,7 @@ const SharedHorizontalCard = ({ index, title, rating, fanrating, image }) => {
             </Grid>
             <Grid item xs={8}>
               <Grid item xs={12} marginTop="15px" marginBottom="15px">
-                {userName}'s Rating : {fanrating}
+                {uname}'s Rating : {fanrating}
               </Grid>
             </Grid>
           </Grid>

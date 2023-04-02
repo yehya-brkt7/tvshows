@@ -62,7 +62,7 @@ const SharedList = (props) => {
       </Grid>
 
       <Grid item xs={12} sm={12} marginTop="50px">
-        <SharedTable pickedList={pickedList} />
+        <SharedTable pickedList={pickedList} uname={params.name} />
       </Grid>
     </Grid>
   );

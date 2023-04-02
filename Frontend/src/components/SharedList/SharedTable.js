@@ -4,7 +4,7 @@ import { Grid } from "@mui/material";
 import SharedHorizontalCard from "./SharedCard";
 
 const SharedTable = (props) => {
-  const { pickedList } = props;
+  const { pickedList, uname } = props;
 
   return (
     <Grid container className={style.tablecontainer}>
@@ -20,6 +20,7 @@ const SharedTable = (props) => {
                 rating={l.rating}
                 fanrating={l.fanrating}
                 image={l.image}
+                uname={uname}
               />
             </Grid>
           );
