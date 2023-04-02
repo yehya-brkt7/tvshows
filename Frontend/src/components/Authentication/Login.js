@@ -58,7 +58,7 @@ const Login = ({ showadded, setShowadded }) => {
             .get("https://trackyourseries.onrender.com/apis/user/" + user.uid)
             .then((res) => {
               setUserid(res.data[0].uid);
-              setUserName(user.data[0].name);
+              setUserName(res.data[0].name);
               setShowadded(!showadded);
               navigate("/list");
             });
