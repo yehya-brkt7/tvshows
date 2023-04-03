@@ -32,10 +32,10 @@ const SharedHorizontalCard = ({
           <Grid container justifyContent="center">
             <Grid container justifyContent="space-evenly">
               <Grid item xs={1}></Grid>
-              <Grid item xs={3}>
+              <Grid item xs={2}>
                 <Avatar sx={{ bgcolor: deepOrange[500] }}>{index + 1}</Avatar>
               </Grid>
-              <Grid item xs={5}>
+              <Grid item xs={9}>
                 {title}
               </Grid>
             </Grid>
