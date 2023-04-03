@@ -40,10 +40,10 @@ const List = ({
 
   const [sortedShows, setSortedshows] = useState([]);
 
-  const url = "Shows.Json";
-  useEffect(() => {
-    fetch(url);
-  }, []);
+  // const url = "Shows.Json";
+  // useEffect(() => {
+  //   fetch(url);
+  // }, []);
 
   useEffect(() => {
     const sorted = shows.sort((a, b) => b.rating.average - a.rating.average);

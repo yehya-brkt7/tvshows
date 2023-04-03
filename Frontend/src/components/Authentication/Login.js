@@ -13,10 +13,15 @@ import useStore from "../Store/Store";
 import axios from "axios";
 
 const Login = ({ showadded, setShowadded }) => {
-  const { setToken, setUser, setUserid, setUserName } = useStore(
+  const { fetch, setToken, setUser, setUserid, setUserName } = useStore(
     (state) => state
   );
   const navigate = useNavigate();
+
+  const url = "Shows.Json";
+  useEffect(() => {
+    fetch(url);
+  }, []);
 
   const googleHandler = async (e) => {
     e.preventDefault();

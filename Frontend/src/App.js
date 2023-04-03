@@ -40,26 +40,29 @@ function App() {
       data: data,
     };
 
-    axios
-      .request(config)
-      .then((response) => {
-        setPickedList(response.data);
-      })
-      .catch((error) => {});
-
+    if (userid != "") {
+      axios
+        .request(config)
+        .then((response) => {
+          setPickedList(response.data);
+        })
+        .catch((error) => {});
+    }
     ////////////////////////////////////////
 
-    axios
-      .get("https://trackyourseries.onrender.com/apis/disabledarr", {
-        params: {
-          usid: userid,
-        },
-      })
-      .then((res) => {
-        setIds(res.data);
-      })
-      .catch((err) => {});
-  }, [showadded, userid]);
+    if (userid != "") {
+      axios
+        .get("https://trackyourseries.onrender.com/apis/disabledarr", {
+          params: {
+            usid: userid,
+          },
+        })
+        .then((res) => {
+          setIds(res.data);
+        })
+        .catch((err) => {});
+    }
+  }, [showadded]);
 
   return (
     <div className="App">

@@ -13260,5 +13260,526 @@
     "image": {
       "original": "https://static.tvmaze.com/uploads/images/original_untouched/152/380329.jpg"
     }
+  },
+  {
+    "id": 355,
+    "name": "Secret Army",
+    "genres": ["Drama", "History", "War"],
+    "summary": "During World War II, a Belgian resistance movement called Lifeline, based in Brussels, organises the return of Allied airmen who have been shot down by the Luftwaffe to the United Kingdom.",
+    "rating": {
+      "average": 8.6
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/34/87409.jpg"
+    }
+  },
+  {
+    "id": 356,
+    "name": "Breakman's world",
+    "genres": ["Comedy", "Family"],
+    "summary": "A wacky scientist and his companions answer viewer questions about science",
+    "rating": {
+      "average": 8.6
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/141/353382.jpg"
+    }
+  },
+  {
+    "id": 357,
+    "name": "Profit",
+    "genres": ["Crime", "Drama"],
+    "summary": "Jim Profit works for a multinational company and isn't above using any means necessary to get ahead, which includes bribery, blackmail, intimidation, extortion, and even murder",
+    "rating": {
+      "average": 8.6
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/36/92344.jpg"
+    }
+  },
+  {
+    "id": 358,
+    "name": "House of the dragon",
+    "genres": ["Action", "Adventure", "Drama"],
+    "summary": "An internal succession war within House Targaryen at the height of its power, 172 years before the birth of Daenerys Targaryen.",
+    "rating": {
+      "average": 8.5
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/413/1034126.jpg"
+    }
+  },
+  {
+    "id": 359,
+    "name": "The Last Kingdom",
+    "genres": ["Action", "Drama", "History"],
+    "summary": "As Alfred the Great defends his kingdom from Norse invaders, Uhtred--born a Saxon but raised by Vikings--seeks to claim his ancestral birthright.",
+    "rating": {
+      "average": 8.5
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/173/433857.jpg"
+    }
+  },
+  {
+    "id": 360,
+    "name": "Ozark",
+    "genres": ["Crime", "Drama", "Thriller"],
+    "summary": "A financial advisor drags his family from Chicago to the Missouri Ozarks, where he must launder money to appease a drug boss.",
+    "rating": {
+      "average": 8.5
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/120/301311.jpg"
+    }
+  },
+  {
+    "id": 361,
+    "name": "Derry girls",
+    "genres": ["Comedy"],
+    "summary": "The personal exploits of a 16-year-old girl and her family and friends during the Troubles in the early 1990s in Northern Ireland.",
+    "rating": {
+      "average": 8.5
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/184/460240.jpg"
+    }
+  },
+  {
+    "id": 362,
+    "name": "The Punisher",
+    "genres": ["Action", "Crime", "Drama"],
+    "summary": "After his revenge on those who murdered his family, aimless Marine veteran Frank Castle finds a new meaning in life as a vigilante known as The Punisher",
+    "rating": {
+      "average": 8.5
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/130/325417.jpg"
+    }
+  },
+  {
+    "id": 363,
+    "name": "Entourage",
+    "genres": ["Comedy", "Drama"],
+    "summary": "Film star Vince Chase navigates the vapid terrain of Los Angeles with a close circle of friends and his trusty agent.",
+    "rating": {
+      "average": 8.5
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/4/11656.jpg"
+    }
+  },
+
+  {
+    "id": 364,
+    "name": "Futurama",
+    "genres": ["Anime"],
+    "summary": "Philip J. Fry, a pizza delivery boy, is accidentally frozen in 1999 and thawed out on New Year's Eve 2999.",
+    "rating": {
+      "average": 8.5
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/4/11403.jpg"
+    }
+  },
+  {
+    "id": 365,
+    "name": "HeartLand",
+    "genres": ["Drama", "Family"],
+    "summary": "A multi-generational saga set in Alberta, Canada and centered on a family getting through life together in both happy and trying times",
+    "rating": {
+      "average": 8.5
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/385/963079.jpg"
+    }
+  },
+  {
+    "id": 366,
+    "name": "Boston Legal",
+    "genres": ["Comedy", "Crime", "Drama"],
+    "summary": "Boston Legal is a spin-off of the long-running David E. Kelley series The Practice (1997), following the exploits of former Practice character Alan Shore (James Spader) at the legal firm of Crane, Poole, and Schmidt.",
+    "rating": {
+      "average": 8.5
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/82/205640.jpg"
+    }
+  },
+  {
+    "id": 367,
+    "name": "Inside No.9 ",
+    "genres": ["Dark Comedy", "Drama"],
+    "summary": "Genre-mixing anthology series, inviting viewers into some very different and enigmatic No. 9s.",
+    "rating": {
+      "average": 8.5
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/62/156642.jpg"
+    }
+  },
+  {
+    "id": 368,
+    "name": "Big boys",
+    "genres": ["Comedy", "Drama"],
+    "summary": "Shy, closeted Jack has spent the past year at home with his mum. He's been grieving for his father but the time has come for him to take his place at uni where he meets his roommate mature student Danny and an unlikely friendship develops.",
+    "rating": {
+      "average": 8.5
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/410/1026936.jpg"
+    }
+  },
+  {
+    "id": 369,
+    "name": "This Country",
+    "genres": ["Comedy"],
+    "summary": "Comedy exploring the lives of young people in modern rural Britain, focusing on cousins Kerry and Kurtan's lives in the Cotswolds.",
+    "rating": {
+      "average": 8.5
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/277/694009.jpg"
+    }
+  },
+  {
+    "id": 370,
+    "name": "Cracker",
+    "genres": ["Crime", "Mystery", "Drama"],
+    "summary": "",
+    "rating": {
+      "average": 8.5
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/39/97593.jpg"
+    }
+  },
+  {
+    "id": 371,
+    "name": "Love/Hate",
+    "genres": ["Crime", "Drama"],
+    "summary": "The story of the organized crime scene of Dublin is revealed, centered on Darren, who wants to stay out of trouble but ends up returning to his old habits and his old gang.",
+    "rating": {
+      "average": 8.5
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/11/28667.jpg"
+    }
+  },
+  {
+    "id": 372,
+    "name": "Please Like me",
+    "genres": ["Comedy", "Drama", "Romance"],
+    "summary": "Twenty something Josh is going through a number of big changes as he navigates his first decade of adulthood. After being dumped by his girlfriend, he comes to the realization that he is gay.",
+    "rating": {
+      "average": 8.5
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/17/43990.jpg"
+    }
+  },
+  {
+    "id": 373,
+    "name": "Blace Books",
+    "genres": ["Comedy"],
+    "summary": "Bernard Black runs a book shop, though his customer service skills leave something to be desired. He hires Manny as an employee. Fran runs the shop next door. Between the three of them many adventures ensue.",
+    "rating": {
+      "average": 8.5
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/81/204622.jpg"
+    }
+  },
+  {
+    "id": 374,
+    "name": "Avonlea",
+    "genres": ["Adventure", "Family", "Drama"],
+    "summary": "A young rich girl is sent to live with relatives on Prince Edward Island in the early 1900s.",
+    "rating": {
+      "average": 8.5
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/28/72162.jpg"
+    }
+  },
+  {
+    "id": 375,
+    "name": "Rake",
+    "genres": ["Comedy", "Drama"],
+    "summary": "Cleaver Greene is a drug addict who has a massive gambling debt with some very shady characters and is in love with a prostitute. He's also a very good criminal lawyer, capable of winning unwinnable cases.",
+    "rating": {
+      "average": 8.5
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/165/414276.jpg"
+    }
+  },
+  {
+    "id": 376,
+    "name": "Outrageous Fortune",
+    "genres": ["Comedy", "Crime", "Drama"],
+    "summary": "When career criminal Wolfgang West gets put away for four years, his wife Cheryl decides it's time for her family to go straight. But can the Wests change the habits of a lifetime?",
+    "rating": {
+      "average": 8.5
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/17/42753.jpg"
+    }
+  },
+  {
+    "id": 377,
+    "name": "People just do nothing",
+    "genres": ["Comedy", "Music"],
+    "summary": "A mockumentary series about a group of failed MCs from West London and their passion for pirate radio.",
+    "rating": {
+      "average": 8.5
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/108/272451.jpg"
+    }
+  },
+  {
+    "id": 378,
+    "name": "Der Tatortreiniger",
+    "genres": ["Comedy", "Crime"],
+    "summary": "The bizarre everyday adventures of Heiko Schotty Schotte, whose profession is to clean up crime scenes.",
+    "rating": {
+      "average": 8.5
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/22/56665.jpg"
+    }
+  },
+  {
+    "id": 379,
+    "name": "Luther",
+    "genres": ["Crime", "Mystery", "Drama"],
+    "summary": "DCI John Luther is a near-genius murder detective whose brilliant mind can't always save him from the dangerous violence of his passions.",
+    "rating": {
+      "average": 8.4
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/5/14769.jpg"
+    }
+  },
+  {
+    "id": 380,
+    "name": "1923",
+    "genres": ["Western", "Drama"],
+    "summary": "The Duttons face a new set of challenges in the early 20th century, including the rise of Western expansion, Prohibition and the Great Depression.",
+    "rating": {
+      "average": 8.4
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/432/1081073.jpg"
+    }
+  },
+  {
+    "id": 381,
+    "name": "Euphoria",
+    "genres": ["Drama"],
+    "summary": "A look at life for a group of high school students as they grapple with issues of drugs, sex, and violence.",
+    "rating": {
+      "average": 8.4
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/196/491549.jpg"
+    }
+  },
+  {
+    "id": 382,
+    "name": "Barry",
+    "genres": ["Action", "Crime", "Comedy"],
+    "summary": "A hit man from the Midwest moves to Los Angeles and gets caught up in the city's theatre arts scene.",
+    "rating": {
+      "average": 8.4
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/149/373829.jpg"
+    }
+  },
+  {
+    "id": 383,
+    "name": "The Handmaid's Tale",
+    "genres": ["Drama", "Science-Fiction", "Thriller"],
+    "summary": "Set in a dystopian future, a woman is forced to live as a concubine under a fundamentalist theocratic dictatorship.",
+    "rating": {
+      "average": 8.4
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/154/387305.jpg"
+    }
+  },
+  {
+    "id": 384,
+    "name": "The Bear",
+    "genres": ["Comedy", "Drama"],
+    "summary": "A young chef from the fine dining world returns to Chicago to run his family's sandwich shop",
+    "rating": {
+      "average": 8.4
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/412/1031499.jpg"
+    }
+  },
+  {
+    "id": 385,
+    "name": "Scrubs",
+    "genres": ["Comedy", "Drama"],
+    "summary": "In the unreal world of Sacred Heart Hospital, intern John J.D. Dorian learns the ways of medicine, friendship and life.",
+    "rating": {
+      "average": 8.4
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/4/11371.jpg"
+    }
+  },
+  {
+    "id": 386,
+    "name": "Billions",
+    "genres": ["Drama"],
+    "summary": "New money means no mercy as Mike Prince takes the Axe Capital throne. Chuck Rhoades is convinced no one should have that much wealth - or power. As all the players seek out new alliances, only one thing's for certain - wealth means war.",
+    "rating": {
+      "average": 8.4
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/100/250293.jpg"
+    }
+  },
+  {
+    "id": 387,
+    "name": "Psych",
+    "genres": ["Comedy", "Mystery", "Crime"],
+    "summary": "When a novice sleuth convinces the police he has psychic powers, he and his reluctant best friend are hired on as consultants to help solve complicated cases.",
+    "rating": {
+      "average": 8.4
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/4/11255.jpg"
+    }
+  },
+  {
+    "id": 388,
+    "name": "Star Trek",
+    "genres": ["Action", "Adventure", "Science-Fiction"],
+    "summary": "In the 23rd Century, Captain James T. Kirk and the crew of the U.S.S. Enterprise explore the galaxy and defend the United Federation of Planets.",
+    "rating": {
+      "average": 8.4
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/3/9461.jpg"
+    }
+  },
+  {
+    "id": 389,
+    "name": "24",
+    "genres": ["Action", "Crime", "Drama"],
+    "summary": "Counter Terrorism Agent Jack Bauer races against the clock to subvert terrorist plots and save his nation from ultimate disaster.",
+    "rating": {
+      "average": 8.4
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/63/158611.jpg"
+    }
+  },
+  {
+    "id": 390,
+    "name": "M*A*S*H",
+    "genres": ["Comedy", "Drama", "war"],
+    "summary": "The staff of an Army hospital in the Korean War find that laughter is the best way to deal with their situation.",
+    "rating": {
+      "average": 8.4
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/307/769684.jpg"
+    }
+  },
+  {
+    "id": 391,
+    "name": "Narcos: Mexico",
+    "genres": ["Crime", "Drama"],
+    "summary": "The rise of the Guadalajara Cartel as an American DEA agent learns the danger of targeting narcos in Mexico.",
+    "rating": {
+      "average": 8.4
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/173/433538.jpg"
+    }
+  },
+  {
+    "id": 392,
+    "name": "After Life",
+    "genres": ["Comedy", "Drama"],
+    "summary": "After Tony's wife dies, his nice-guy persona is altered into an impulsive, devil-may-care attitude that takes his old world by storm.",
+    "rating": {
+      "average": 8.4
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/185/462735.jpg"
+    }
+  },
+  {
+    "id": 393,
+    "name": "Top Boy",
+    "genres": ["Crime", "Drama", "Thriller"],
+    "summary": "Two London drug dealers ply their lucrative trade at a public housing estate in East London.",
+    "rating": {
+      "average": 8.4
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/211/528058.jpg"
+    }
+  },
+  {
+    "id": 394,
+    "name": "Veronica Mars",
+    "genres": ["Crime", "drama", "Mystery"],
+    "summary": "After her best friend is murdered, and her father is removed as county Sheriff, Veronica Mars dedicates her life to cracking the toughest mysteries in the affluent town of Neptune",
+    "rating": {
+      "average": 8.4
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/9/24540.jpg"
+    }
   }
 ]
