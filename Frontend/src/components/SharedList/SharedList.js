@@ -64,14 +64,14 @@ const SharedList = (props) => {
       </Grid>
 
       <Grid item xs={12} marginTop="50px">
-        <a
+        <button
           onClick={back}
           className={`${style.btn} ${style.effect04}`}
           data-sm-link-text="Back"
           target="_blank"
         >
           <span className={style.google}>Return</span>
-        </a>
+        </button>
       </Grid>
 
       <Grid item xs={12} sm={12} marginTop="50px">

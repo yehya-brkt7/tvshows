@@ -14,7 +14,7 @@
 
 .card {
   display: flex;
-  height: 420px;
+  height: 480px;
   width: 300px;
   background-color: #17141d;
   border-radius: 10px;
@@ -129,4 +129,12 @@ svg {
   color: white;
   font-size: 15px;
   font-weight: bold;
+}
+
+.rating {
+  display: block;
+  padding: 2px;
+  margin: 10px;
+  background-color: #000;
+  font-size: 25px;
 }

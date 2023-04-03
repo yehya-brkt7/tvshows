@@ -83,7 +83,7 @@ const HorizontalCard = ({
               <Grid item xs={3}>
                 <Avatar sx={{ bgcolor: deepOrange[500] }}>{index + 1}</Avatar>
               </Grid>
-              <Grid item xs={5}>
+              <Grid item xs={5} height="80px">
                 {title}
               </Grid>
 
@@ -123,7 +123,7 @@ const HorizontalCard = ({
                 <span className={style.google}>Update</span>
               </button>
               <Grid item xs={12} marginTop="15px" marginBottom="15px">
-                Your Rating : {fanrating}
+                Your Rating : <span className={style.rating}>{fanrating}</span>
               </Grid>
             </Grid>
           </Grid>

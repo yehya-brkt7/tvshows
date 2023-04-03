@@ -24,9 +24,7 @@ const List = ({
   Id,
   setId,
 }) => {
-  const { fetch, shows, user, userid, setUserName } = useStore(
-    (state) => state
-  );
+  const { shows, user } = useStore((state) => state);
 
   const navigate = useNavigate();
 
@@ -73,21 +71,21 @@ const List = ({
         <Grid item xs={12} sm={4}>
           <div className={style.buttons}>
             <div className={style.container}>
-              <a
+              <button
                 onClick={viewList}
                 className={`${style.btn} ${style.effect04}`}
                 data-sm-link-text="view list"
                 target="_blank"
               >
                 <span className={style.google}>Your List</span>
-              </a>
+              </button>
             </div>
           </div>
         </Grid>
         <Grid item xs={12} container justifyContent="center" sm={4}>
           <div className={style.buttons}>
             <div className={style.container}>
-              <a
+              <button
                 onClick={googleHandler}
                 className={`${style.btn} ${style.effect04}`}
                 data-sm-link-text="Exit"
@@ -101,7 +99,7 @@ const List = ({
                   {" "}
                   <img src={user.photoURL} referrerpolicy="no-referrer" />
                 </Avatar>
-              </a>
+              </button>
             </div>
           </div>
         </Grid>
@@ -114,7 +112,7 @@ const List = ({
             <TextField
               inputProps={{ style: { fontSize: "1.5em", color: "gray" } }}
               InputLabelProps={{
-                style: { fontSize: "1.5em", color: "gray" },
+                style: { fontSize: "1.5em", color: "white" },
               }}
               label="Search"
               variant="standard"

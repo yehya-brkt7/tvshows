@@ -35,22 +35,23 @@ const MyList = (props) => {
       <Grid item xs={12}>
         <div className={style.buttons}>
           <div className={style.container}>
-            <a
+            <button
               onClick={back}
               className={`${style.btn} ${style.effect04}`}
               data-sm-link-text="Back"
               target="_blank"
             >
               <span className={style.google}>Return</span>
-            </a>
-            <a
+            </button>
+            <br></br>
+            <button
               onClick={share}
               className={`${style.btn} ${style.effect04}`}
               data-sm-link-text="With friends"
               target="_blank"
             >
               <span className={style.google}>Share List</span>
-            </a>
+            </button>
           </div>
         </div>
       </Grid>

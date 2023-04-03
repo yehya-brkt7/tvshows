@@ -112,14 +112,14 @@ const Login = ({ showadded, setShowadded }) => {
           <Grid item xs={12} marginTop="293px">
             <div className={style.buttons}>
               <div className={style.container}>
-                <a
+                <button
                   onClick={googleHandler}
                   className={`${style.btn} ${style.effect04}`}
                   data-sm-link-text="with google"
                   target="_blank"
                 >
                   <span className={style.google}>Login</span>
-                </a>
+                </button>
               </div>
             </div>
           </Grid>

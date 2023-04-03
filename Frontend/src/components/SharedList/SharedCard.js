@@ -54,7 +54,8 @@ const SharedHorizontalCard = ({
             </Grid>
             <Grid item xs={8}>
               <Grid item xs={12} marginTop="15px" marginBottom="15px">
-                {uname}'s Rating : {fanrating}
+                {uname}'s Rating :
+                <span className={style.rating}>{fanrating}</span>
               </Grid>
             </Grid>
           </Grid>
