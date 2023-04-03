@@ -12,8 +12,8 @@ import { GlobalDebug } from "./utils/consoleremove";
 const LazyList = React.lazy(() => import("./components/ShowsList/List"));
 
 if (process.env.REACT_APP_NODE_ENV != "development") {
-  GlobalDebug(false);
-  console.log = function no_console() {};
+  // GlobalDebug(false);
+  // console.log = function no_console() {};
 
   disableReactDevTools();
 }

@@ -13,7 +13,7 @@ import useStore from "../Store/Store";
 import axios from "axios";
 
 const Login = ({ showadded, setShowadded }) => {
-  const { fetch, setToken, setUser, setUserid, setUserName } = useStore(
+  const { user, fetch, setToken, setUser, setUserid, setUserName } = useStore(
     (state) => state
   );
   const navigate = useNavigate();
@@ -41,6 +41,7 @@ const Login = ({ showadded, setShowadded }) => {
         setUser(user);
 
         //if user is new
+
         if (getAdditionalUserInfo(result).isNewUser) {
           axios
             .post("https://trackyourseries.onrender.com/apis/user", {

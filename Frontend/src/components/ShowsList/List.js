@@ -30,20 +30,7 @@ const List = ({
 
   const navigate = useNavigate();
 
-  useEffect(() => {
-    axios
-      .get("https://trackyourseries.onrender.com/apis/user", {
-        uid: userid,
-      })
-      .then((res) => {});
-  }, [user]);
-
   const [sortedShows, setSortedshows] = useState([]);
-
-  // const url = "Shows.Json";
-  // useEffect(() => {
-  //   fetch(url);
-  // }, []);
 
   useEffect(() => {
     const sorted = shows.sort((a, b) => b.rating.average - a.rating.average);
