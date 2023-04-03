@@ -16,6 +16,11 @@ import Rating from "@mui/material/Rating";
 import useStore from "../Store/Store";
 import style from "./showcard.module.css";
 import axios from "axios";
+import "react-notifications/lib/notifications.css";
+import {
+  NotificationContainer,
+  NotificationManager,
+} from "react-notifications";
 
 const StyledRating = styled(Rating)({
   "& .MuiRating-iconFilled": {
@@ -104,6 +109,7 @@ const ShowCard = (props) => {
       })
       .then(() => {
         setShowadded(!showadded);
+        NotificationManager.success("✓", "Show added to List!");
       });
 
     axios
@@ -124,85 +130,88 @@ const ShowCard = (props) => {
   };
 
   return (
-    <Card sx={boxSX}>
-      <CardHeader
-        sx={{
-          height: 50,
-          backgroundColor: "#ddd",
-          color: "black",
-          marginBottom: "20px",
-        }}
-        avatar={
-          <Avatar sx={{ bgcolor: "warning.main" }} aria-label="recipe">
-            {index}
-          </Avatar>
-        }
-        titleTypographyProps={{ variant: "h6" }}
-        title={name}
-        subheader={genres.map((genre, index) => {
-          return (
-            <span>
-              {genre} {index === genres.length - 1 ? "" : ", "}
-            </span>
-          );
-        })}
-      />
-      <CardMedia
-        component="img"
-        height="194"
-        image={image}
-        alt="Paella dish"
-        marginTop="10px"
-        style={styles.media}
-        loading="lazy"
-      />
+    <>
+      <NotificationContainer />
+      <Card sx={boxSX}>
+        <CardHeader
+          sx={{
+            height: 50,
+            backgroundColor: "#ddd",
+            color: "black",
+            marginBottom: "20px",
+          }}
+          avatar={
+            <Avatar sx={{ bgcolor: "warning.main" }} aria-label="recipe">
+              {index}
+            </Avatar>
+          }
+          titleTypographyProps={{ variant: "h6" }}
+          title={name}
+          subheader={genres.map((genre, index) => {
+            return (
+              <span>
+                {genre} {index === genres.length - 1 ? "" : ", "}
+              </span>
+            );
+          })}
+        />
+        <CardMedia
+          component="img"
+          height="194"
+          image={image}
+          alt="Paella dish"
+          marginTop="10px"
+          style={styles.media}
+          loading="lazy"
+        />
 
-      <Grid item container justifyContent="center" alignItems="flex-end">
-        Official Rating:{" "}
-        <AiFillStar
-          style={{ marginLeft: "10px", marginTop: "10px", fill: "#E6B316" }}
-        />{" "}
-        {rating} /10
-      </Grid>
-
-      <CardContent>
-        <Typography
-          variant="body2"
-          color="text.secondary"
-          style={{ cursor: "pointer" }}
-        >
-          <ExpandText maxLength={50} className="expand" text={summary} />
-          ......<b>click to view</b>
-        </Typography>
-      </CardContent>
-
-      <CardActions>
-        <Grid container direction="row" justifyContent="center">
-          <Grid item xs={6}>
-            <div className={style.buttons}>
-              <div className={style.container}>
-                <button
-                  onClick={pickShow}
-                  ref={btnRef}
-                  disabled={
-                    ids
-                      .filter((obj) => obj.usid === userid)
-                      .findIndex((obj) => obj.id === id) !== -1
-                      ? true
-                      : false
-                  }
-                  className="btn"
-                  data-sm-link-text="Pick series"
-                  target="_blank"
-                >
-                  <span className={style.google}>Add To List</span>
-                </button>
-              </div>
-            </div>
-          </Grid>
+        <Grid item container justifyContent="center" alignItems="flex-end">
+          Official Rating:{" "}
+          <AiFillStar
+            style={{ marginLeft: "10px", marginTop: "10px", fill: "#E6B316" }}
+          />{" "}
+          {rating} /10
         </Grid>
-      </CardActions>
-    </Card>
+
+        <CardContent>
+          <Typography
+            variant="body2"
+            color="text.secondary"
+            style={{ cursor: "pointer" }}
+          >
+            <ExpandText maxLength={50} className="expand" text={summary} />
+            ......<b>click to view</b>
+          </Typography>
+        </CardContent>
+
+        <CardActions>
+          <Grid container direction="row" justifyContent="center">
+            <Grid item xs={6}>
+              <div className={style.buttons}>
+                <div className={style.container}>
+                  <button
+                    onClick={pickShow}
+                    ref={btnRef}
+                    disabled={
+                      ids
+                        .filter((obj) => obj.usid === userid)
+                        .findIndex((obj) => obj.id === id) !== -1
+                        ? true
+                        : false
+                    }
+                    className="btn"
+                    data-sm-link-text="Pick series"
+                    target="_blank"
+                  >
+                    <span className={style.google}>Add To List</span>
+                  </button>
+                </div>
+              </div>
+            </Grid>
+          </Grid>
+        </CardActions>
+      </Card>
+    </>
   );
 };
 

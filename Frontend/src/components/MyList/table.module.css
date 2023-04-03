@@ -76,6 +76,9 @@
 .effect04:hover {
   background-color: #000;
 }
+.effect04:focus {
+  background-color: white;
+}
 
 /* HOVERしたら文字1を上に */
 .effect04:hover span {

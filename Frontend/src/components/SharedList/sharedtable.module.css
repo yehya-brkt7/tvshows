@@ -77,6 +77,10 @@
   background-color: #000;
 }
 
+.effect04:focus {
+  background-color: white;
+}
+
 /* HOVERしたら文字1を上に */
 .effect04:hover span {
   -webkit-transform: translateY(-400%) scale(-0.1, 20);

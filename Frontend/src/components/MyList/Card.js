@@ -9,6 +9,11 @@ import Avatar from "@mui/material/Avatar";
 import axios from "axios";
 import useStore from "../Store/Store.js";
 import Click from "../../assets/click.wav";
+import "react-notifications/lib/notifications.css";
+import {
+  NotificationContainer,
+  NotificationManager,
+} from "react-notifications";
 
 const styles = {
   media: {
@@ -44,6 +49,7 @@ const HorizontalCard = ({
       })
       .then((res) => {
         setShowadded(!showadded);
+        NotificationManager.info("Show deleted!");
       })
       .catch((err) => {});
 
@@ -69,12 +75,14 @@ const HorizontalCard = ({
       })
       .then(() => {
         setShowadded(!showadded);
+        NotificationManager.success("✓", "Show rating updated!");
       })
       .catch((err) => {});
   };
 
   return (
     <>
+      <NotificationContainer />
       <div className={style.container} onMouseEnter={playSound}>
         <div className={style.card}>
           <Grid container justifyContent="center">
