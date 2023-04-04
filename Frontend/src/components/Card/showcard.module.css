@@ -109,3 +109,10 @@
   pointer-events: none;
   opacity: 0.5;
 }
+
+.alert {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  right: 0;
+}

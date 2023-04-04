@@ -1,5 +1,5 @@
 import * as React from "react";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { styled } from "@mui/material/styles";
 import Card from "@mui/material/Card";
 import CardHeader from "@mui/material/CardHeader";
@@ -16,11 +16,7 @@ import Rating from "@mui/material/Rating";
 import useStore from "../Store/Store";
 import style from "./showcard.module.css";
 import axios from "axios";
-import "react-notifications/lib/notifications.css";
-import {
-  NotificationContainer,
-  NotificationManager,
-} from "react-notifications";
+import Alert from "@mui/material/Alert";
 
 const StyledRating = styled(Rating)({
   "& .MuiRating-iconFilled": {
@@ -96,6 +92,8 @@ const ShowCard = (props) => {
 
   let btnRef = useRef();
 
+  const [alert, setAlert] = useState(false);
+
   const pickShow = () => {
     axios
       .post("https://trackyourseries.onrender.com/apis/shows", {
@@ -109,7 +107,12 @@ const ShowCard = (props) => {
       })
       .then(() => {
         setShowadded(!showadded);
-        NotificationManager.success("✓", "Show added to List!");
+        setAlert(true);
+      })
+      .then(() => {
+        setTimeout(() => {
+          setAlert(false);
+        }, 2000);
       });
 
     axios
@@ -131,7 +134,6 @@ const ShowCard = (props) => {
 
   return (
     <>
-      <NotificationContainer />
       <Card sx={boxSX}>
         <CardHeader
           sx={{
@@ -211,6 +213,13 @@ const ShowCard = (props) => {
           </Grid>
         </CardActions>
       </Card>
+      {alert ? (
+        <Alert severity="success" className={style.alert}>
+          Success— <strong>Added to List</strong>
+        </Alert>
+      ) : (
+        <></>
+      )}
     </>
   );
 };

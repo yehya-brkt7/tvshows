@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import DiscreteSliderMarks from "./Slider.js";
 import style from "./card.module.css";
 import CardMedia from "@mui/material/CardMedia";
@@ -9,11 +9,7 @@ import Avatar from "@mui/material/Avatar";
 import axios from "axios";
 import useStore from "../Store/Store.js";
 import Click from "../../assets/click.wav";
-import "react-notifications/lib/notifications.css";
-import {
-  NotificationContainer,
-  NotificationManager,
-} from "react-notifications";
+import Alert from "@mui/material/Alert";
 
 const styles = {
   media: {
@@ -39,6 +35,9 @@ const HorizontalCard = ({
     new Audio(Click).play();
   };
 
+  const [alert, setAlert] = useState(false);
+  const [deletealert, setDeletealert] = useState(false);
+
   const deleteShow = (id) => {
     axios
       .delete("https://trackyourseries.onrender.com/apis/shows", {
@@ -49,7 +48,12 @@ const HorizontalCard = ({
       })
       .then((res) => {
         setShowadded(!showadded);
-        NotificationManager.info("Show deleted!");
+        setDeletealert(true);
+      })
+      .then(() => {
+        setTimeout(() => {
+          setDeletealert(false);
+        }, 2000);
       })
       .catch((err) => {});
 
@@ -63,6 +67,7 @@ const HorizontalCard = ({
       .then((res) => {
         setShowadded(!showadded);
       })
+
       .catch((err) => {});
   };
 
@@ -75,14 +80,33 @@ const HorizontalCard = ({
       })
       .then(() => {
         setShowadded(!showadded);
-        NotificationManager.success("✓", "Show rating updated!");
+        setAlert(true);
+      })
+      .then(() => {
+        setTimeout(() => {
+          setAlert(false);
+        }, 2000);
       })
       .catch((err) => {});
   };
 
   return (
     <>
-      <NotificationContainer />
+      {alert ? (
+        <Alert severity="success" className={style.alert}>
+          Updated <strong>Show rating updated</strong>
+        </Alert>
+      ) : (
+        <></>
+      )}
+
+      {deletealert ? (
+        <Alert severity="info" className={style.alert}>
+          Success— <strong>Show deleted</strong>
+        </Alert>
+      ) : (
+        <></>
+      )}
       <div className={style.container} onMouseEnter={playSound}>
         <div className={style.card}>
           <Grid container justifyContent="center">
