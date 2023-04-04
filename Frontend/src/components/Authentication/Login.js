@@ -5,6 +5,8 @@ import {
   signInWithPopup,
   GoogleAuthProvider,
   getAdditionalUserInfo,
+  getAuth,
+  onAuthStateChanged,
 } from "firebase/auth";
 import { auth, provider } from "../../services/Firebase"; // update path to your firestore config
 import { useNavigate } from "react-router-dom";
@@ -83,6 +85,21 @@ const Login = ({ showadded, setShowadded }) => {
         // ...
       });
   };
+
+  const auth = getAuth();
+  useEffect(() => {
+    onAuthStateChanged(auth, (user) => {
+      if (user) {
+        setUser(user);
+        setUserid(user.uid);
+        setUserName(user.displayName);
+        setShowadded(!showadded);
+        navigate("/list");
+      } else {
+        navigate("/");
+      }
+    });
+  }, []);
 
   const image = {
     backgroundImage: `url(${bg})`,
