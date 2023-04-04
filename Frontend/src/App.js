@@ -68,14 +68,14 @@ function App() {
     <div className="App">
       <Router>
         <Routes>
-          <Route
+          {/* <Route
             path="/"
             element={
               <Login showadded={showadded} setShowadded={setShowadded} />
             }
-          />
+          /> */}
           <Route
-            path="/list"
+            path="/"
             element={
               userid != "" ? (
                 <React.Suspense fallback="Loading...">

@@ -24,7 +24,7 @@ const List = ({
   Id,
   setId,
 }) => {
-  const { shows, user } = useStore((state) => state);
+  const { shows, user, setUserid } = useStore((state) => state);
 
   const navigate = useNavigate();
 
@@ -41,6 +41,7 @@ const List = ({
     signOut(auth)
       .then(() => {
         navigate("/");
+        setUserid("");
         setPickedList([]);
         localStorage.removeItem("isLoggedin");
       })

@@ -15,7 +15,7 @@ const MyList = (props) => {
   const navigate = useNavigate();
 
   const back = () => {
-    navigate("/list");
+    navigate("/");
   };
 
   const share = () => {

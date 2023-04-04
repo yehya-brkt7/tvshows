@@ -55,7 +55,7 @@ const Login = ({ showadded, setShowadded }) => {
               setUserName(user.displayName);
               setShowadded(!showadded);
 
-              navigate("/list");
+              navigate("/");
             })
             .catch((err) => {});
         }
@@ -68,7 +68,7 @@ const Login = ({ showadded, setShowadded }) => {
               setUserid(res.data[0].uid);
               setUserName(res.data[0].name);
               setShowadded(!showadded);
-              navigate("/list");
+              navigate("/");
             });
         }
       })
@@ -94,9 +94,8 @@ const Login = ({ showadded, setShowadded }) => {
         setUserid(user.uid);
         setUserName(user.displayName);
         setShowadded(!showadded);
-        navigate("/list");
-      } else {
         navigate("/");
+      } else {
       }
     });
   }, []);
