@@ -77,36 +77,36 @@ function App() {
           <Route
             path="/list"
             element={
-              // userid != "" ? (
-              <React.Suspense fallback="Loading...">
-                <LazyList
-                  pickedList={pickedList}
-                  setPickedList={setPickedList}
-                  showadded={showadded}
-                  setShowadded={setShowadded}
-                  ids={ids}
-                  setIds={setIds}
-                  Id={Id}
-                  setId={setId}
-                />
-              </React.Suspense>
-              // ) : (
-              // <Login showadded={showadded} setShowadded={setShowadded} />
-              // )
+              userid != "" ? (
+                <React.Suspense fallback="Loading...">
+                  <LazyList
+                    pickedList={pickedList}
+                    setPickedList={setPickedList}
+                    showadded={showadded}
+                    setShowadded={setShowadded}
+                    ids={ids}
+                    setIds={setIds}
+                    Id={Id}
+                    setId={setId}
+                  />
+                </React.Suspense>
+              ) : (
+                <Login showadded={showadded} setShowadded={setShowadded} />
+              )
             }
           />
           <Route
             path="/mylist"
             element={
-              // userid != "" ? (
-              <MyList
-                pickedList={pickedList}
-                showadded={showadded}
-                setShowadded={setShowadded}
-              />
-              // ) : (
-              // <Login showadded={showadded} setShowadded={setShowadded} />
-              // )
+              userid != "" ? (
+                <MyList
+                  pickedList={pickedList}
+                  showadded={showadded}
+                  setShowadded={setShowadded}
+                />
+              ) : (
+                <Login showadded={showadded} setShowadded={setShowadded} />
+              )
             }
           />
           <Route path="/sharedlist/:userid/:name" element={<SharedList />} />
