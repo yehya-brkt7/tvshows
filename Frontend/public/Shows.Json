@@ -13781,5 +13781,239 @@
     "image": {
       "original": "https://static.tvmaze.com/uploads/images/original_untouched/9/24540.jpg"
     }
+  },
+  {
+    "id": 395,
+    "name": "11.22.63",
+    "genres": ["Science-Fiction", "Romance"],
+    "summary": "Jake Epping, a teacher, gets a chance to travel back in time to avert the death of John F. Kennedy. However, history's aversion to alteration and his love for the era and a woman endanger him",
+    "rating": {
+      "average": 8.1
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/63/157660.jpg"
+    }
+  },
+  {
+    "id": 396,
+    "name": "From",
+    "genres": ["Mystery", "Thriller", "Horror"],
+    "summary": "The residents of a small town struggle to find a way out when mysterious unknown forces keep them from leaving.",
+    "rating": {
+      "average": 7.6
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/403/1009460.jpg"
+    }
+  },
+  {
+    "id": 397,
+    "name": "Prison Break",
+    "genres": ["Crime", "drama", "Thriller"],
+    "summary": "An engineer installs himself in a prison he helped design, in order to save his falsely accused brother from a death sentence.",
+    "rating": {
+      "average": 8.3
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/4/11418.jpg"
+    }
+  },
+  {
+    "id": 398,
+    "name": "Broadchurch",
+    "genres": ["Crime", "Mystery", "drama"],
+    "summary": "The murder of a young boy in a small coastal town brings a media frenzy, which threatens to tear the community apart.",
+    "rating": {
+      "average": 8.4
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/405/1014382.jpg"
+    }
+  },
+  {
+    "id": 399,
+    "name": "American Crime Story",
+    "genres": ["Crime"],
+    "summary": "O J Simpson, a black American football player, is accused of killing his ex-wife and a waiter. The police collect evidence that makes him look guilty, but his lawyers find ways to get him acquitted.",
+    "rating": {
+      "average": 8.4
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/49/124188.jpg"
+    }
+  },
+  {
+    "id": 400,
+    "name": "Black bird",
+    "genres": ["Crime", "Thriller"],
+    "summary": "As Jimmy Keene begins a 10-year prison sentence, he gets an incredible offer: if he can elicit a confession from suspected killer Larry Hall, he will be freed; completing this mission becomes the challenge of a lifetime.",
+    "rating": {
+      "average": 8.1
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/412/1031398.jpg"
+    }
+  },
+  {
+    "id": 401,
+    "name": "Squid Game",
+    "genres": ["drama", "Thriller"],
+    "summary": "Hundreds of cash-strapped contestants accept an invitation to compete in children's games for a tempting prize, but the stakes are deadly.",
+    "rating": {
+      "average": 8
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/362/906892.jpg"
+    }
+  },
+  {
+    "id": 402,
+    "name": "I know this much is true",
+    "genres": ["drama"],
+    "summary": "Following the parallel lives of identical twin brothers Dominick and Thomas Birdsey in a story of betrayal, sacrifice and forgiveness",
+    "rating": {
+      "average": 8.1
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/261/654805.jpg"
+    }
+  },
+  {
+    "id": 403,
+    "name": "The Undoing",
+    "genres": ["Crime", "Thriller", "Drama"],
+    "summary": "Grace Fraser becomes intrigued by a young mother at her son's school. Later, tragedy rocks the community",
+    "rating": {
+      "average": 7.4
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/279/699769.jpg"
+    }
+  },
+  {
+    "id": 404,
+    "name": "La Casa De Papel",
+    "genres": ["Crime", "Thriller"],
+    "summary": "A criminal mastermind who goes by The Professor has a plan to pull off the biggest heist in recorded history -- to print billions of euros in the Royal Mint of Spain. To help him carry out the ambitious plan, he recruits eight people with certain abilities and who have nothing to lose. The group of thieves take hostages to aid in their negotiations with the authorities, who strategize to come up with a way to capture The Professor. As more time elapses, the robbers prepare for a showdown with the police.",
+    "rating": {
+      "average": 8.2
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/245/614282.jpg"
+    }
+  },
+  {
+    "id": 405,
+    "name": "The Fall",
+    "genres": ["Crime", "Thriller"],
+    "summary": "The psychological thriller examines the lives of two hunters -- one is a serial killer who preys on victims in and around Belfast, Northern Ireland, and the other is a female detective drafted from the London Metropolitan Police to catch him. The local authorities have no suspects and no experience with cases involving sexually motivated serial killers; DSI Stella Gibson has. She heads a task force dedicated to solving the crime spree, with a simple motto: Anyone not part of the solution is part of the problem. The killer? He's Paul Spector, a father and a husband leading a double life, as viewers learn from the outset. He's hiding in plain sight, the protagonist in a cat and mouse game that is every police officer's worst nightmare.",
+    "rating": {
+      "average": 8.1
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/75/188997.jpg"
+    }
+  },
+  {
+    "id": 406,
+    "name": "You",
+    "genres": ["Thriller"],
+    "summary": "What would you do for love? For Joe, an intense young man who frequently becomes smitten with beautiful, smart women, this question is put to the test. A charming yet awkward crush becomes something more sinister when love turns into obsession for Joe. Using social media and the internet, he uses every tool at his disposal to become close to the women of his dreams, even going so far as to remove any obstacle -- including people -- that stands in his way of getting to them.",
+    "rating": {
+      "average": 7.7
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/358/896521.jpg"
+    }
+  },
+  {
+    "id": 407,
+    "name": "Manhunt: Unabomber",
+    "genres": ["Crime", "drama"],
+    "summary": "Security officer Richard Jewell thwarts a deadly explosion at the 1996 Atlanta Olympics. However, he soon finds himself in the middle of a gruelling investigation by the FBI.",
+    "rating": {
+      "average": 8.1
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/122/307242.jpg"
+    }
+  },
+  {
+    "id": 408,
+    "name": "The Outsider",
+    "genres": ["Crime", "Mystery"],
+    "summary": "The Outsiderbegins by following an investigation which at first seems like it will be simple and straightforward but things change as it leads into the gruesome murder of a young boy by a seasoned cop. When an insidious supernatural force edges its way into the case, it leads the investigators to question everything they believe in. The character of Holly Gibney from Mr. Mercedes is a major character in this series.",
+    "rating": {
+      "average": 7.7
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/176/441177.jpg"
+    }
+  },
+  {
+    "id": 409,
+    "name": "12 Monkeys",
+    "genres": ["Science-Fiction", "Mystery"],
+    "summary": "James, a scavenger in 2043, has to time travel back to 2015 to prevent the contagion of a deadly plague. In order to do so, he has to destroy the Army of the 12 Monkeys who released the virus.",
+    "rating": {
+      "average": 7.7
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/63/157699.jpg"
+    }
+  },
+  {
+    "id": 410,
+    "name": "Outer Banks",
+    "genres": ["Thriller", "Adventure"],
+    "summary": "A teenager enlists his three best friends to hunt for a legendary treasure linked to his father's disappearance.",
+    "rating": {
+      "average": 7.5
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/249/623416.jpg"
+    }
+  },
+  {
+    "id": 411,
+    "name": "Killing Eve",
+    "genres": ["Drama", "Crime"],
+    "summary": "Being recruited by an intelligence agency puts Eve in the direct path of Villanelle, an assassin. Though the mission is to kill her, the two women find themselves strangely drawn to each other.",
+    "rating": {
+      "average": 8.1
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/148/370305.jpg"
+    }
+  },
+  {
+    "id": 412,
+    "name": "Manifest",
+    "genres": ["Mystery", "drama"],
+    "summary": "After being presumed dead, 191 passengers of the Montego Air Flight 828 try reintegrating into society. However, disturbing realities come to light, which unsettles them.",
+    "rating": {
+      "average": 7.1
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/297/743028.jpg"
+    }
   }
 ]

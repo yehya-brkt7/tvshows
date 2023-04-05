@@ -1,4 +1,5 @@
 import * as React from "react";
+import { useEffect } from "react";
 import Box from "@mui/material/Box";
 import Slider from "@mui/material/Slider";
 import { useState } from "react";
@@ -24,7 +25,15 @@ function valuetext(value) {
 
 const DiscreteSliderMarks = ({ index, frating, setRating }) => {
   const handleChange = (event) => {
-    setRating(event.target.value);
+    const ratingvalue = event.target.value;
+
+    setRating(ratingvalue);
+
+    // const newarray = Array.from(frating);
+
+    // newarray[index] = ratingvalue;
+
+    // setRating((frating) => newarray);
   };
 
   return (

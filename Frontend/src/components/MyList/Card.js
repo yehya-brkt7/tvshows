@@ -141,7 +141,11 @@ const HorizontalCard = ({
             </Grid>
             <Grid item container justifyContent="center" xs={10}>
               IMDB: {rating}
-              <DiscreteSliderMarks frating={frating} setRating={setRating} />
+              <DiscreteSliderMarks
+                index={index}
+                frating={frating}
+                setRating={setRating}
+              />
             </Grid>
             <Grid item xs={8}>
               <button
