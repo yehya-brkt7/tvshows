@@ -90,11 +90,19 @@ const Login = ({ showadded, setShowadded }) => {
   useEffect(() => {
     onAuthStateChanged(auth, (user) => {
       if (user) {
-        setUser(user);
-        setUserid(user.uid);
-        setUserName(user.displayName);
-        setShowadded(!showadded);
-        navigate("/");
+        // setUser(user);
+        // setUserid(user.uid);
+        // setUserName(user.displayName);
+        // setShowadded(!showadded);
+        // navigate("/");
+        axios
+          .get("https://trackyourseries.onrender.com/apis/user/" + user.uid)
+          .then((res) => {
+            setUserid(res.data[0].uid);
+            setUserName(res.data[0].name);
+            setShowadded(!showadded);
+            navigate("/");
+          });
       } else {
       }
     });
