@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import style from "./login.module.css";
 import Grid from "@mui/material/Grid";
 import {
@@ -13,6 +13,7 @@ import { useNavigate } from "react-router-dom";
 import bg from "../../assets/bg.jpg";
 import useStore from "../Store/Store";
 import axios from "axios";
+import CircularIndeterminate from "./loading";
 
 const Login = ({ showadded, setShowadded }) => {
   const { user, fetch, setToken, setUser, setUserid, setUserName } = useStore(
@@ -86,15 +87,13 @@ const Login = ({ showadded, setShowadded }) => {
       });
   };
 
+  const [loading, setLoading] = useState(false);
+
   const auth = getAuth();
   useEffect(() => {
     onAuthStateChanged(auth, (user) => {
       if (user) {
-        // setUser(user);
-        // setUserid(user.uid);
-        // setUserName(user.displayName);
-        // setShowadded(!showadded);
-        // navigate("/");
+        setLoading(true);
         axios
           .get("https://trackyourseries.onrender.com/apis/user/" + user.uid)
           .then((res) => {
@@ -104,6 +103,7 @@ const Login = ({ showadded, setShowadded }) => {
             navigate("/");
           });
       } else {
+        setLoading(false);
       }
     });
   }, []);
@@ -117,13 +117,18 @@ const Login = ({ showadded, setShowadded }) => {
     height: "382px",
     border: "2px solid black",
     borderRadius: "15px",
-    marginTop: "200px",
+    marginTop: "50px",
     border: "1px solid white",
   };
 
   return (
     <>
       <Grid container justifyContent="center">
+        <Grid item xs={12} className={style.loader}>
+          {" "}
+          {loading ? <CircularIndeterminate /> : <></>}
+        </Grid>
+
         <Grid
           container
           justifyContent="center"

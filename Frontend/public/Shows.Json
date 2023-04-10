@@ -14015,5 +14015,525 @@
     "image": {
       "original": "https://static.tvmaze.com/uploads/images/original_untouched/297/743028.jpg"
     }
+  },
+  {
+    "id": 413,
+    "name": "Ash vs Evil Dead",
+    "genres": ["Fantasy", "Comedy", "Action"],
+    "summary": "Ash has spent the last thirty years avoiding responsibility, maturity, and the terrors of the Evil Dead until a Deadite plague threatens to destroy all of mankind and Ash becomes mankind's only hope.",
+    "rating": {
+      "average": 8.4
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/79/197839.jpg"
+    }
+  },
+  {
+    "id": 414,
+    "name": "Warrior",
+    "genres": ["Action", "Crime", "drama"],
+    "summary": "During the Tong Wars in the late 1800s, Ah Sahm, a martial arts prodigy from China, immigrates to San Francisco and becomes a hatchet man for the most powerful tong in Chinatown.",
+    "rating": {
+      "average": 8.4
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/272/681430.jpg"
+    }
+  },
+  {
+    "id": 415,
+    "name": "Babylon 5",
+    "genres": ["Action", "drama", "Adventure"],
+    "summary": "In the mid 23rd century, the Earth Alliance space station Babylon 5, located in neutral territory, is a major focal point for political intrigue, racial tensions and various wars over the course of five years.",
+    "rating": {
+      "average": 8.4
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/65/163112.jpg"
+    }
+  },
+  {
+    "id": 416,
+    "name": "Northern Exposure",
+    "genres": ["Comedy", "drama"],
+    "summary": "A newly graduated doctor is required to set up his practice in an eccentric Alaskan town.",
+    "rating": {
+      "average": 8.4
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/4/10327.jpg"
+    }
+  },
+  {
+    "id": 417,
+    "name": "Red Dwarf",
+    "genres": ["Comedy", "Science-Fiction"],
+    "summary": "The adventures of the last human alive and his friends, stranded three million years into deep space on the mining ship Red Dwarf.",
+    "rating": {
+      "average": 8.4
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/49/124406.jpg"
+    }
+  },
+  {
+    "id": 418,
+    "name": "The Inbetweeners",
+    "genres": ["Comedy"],
+    "summary": "Follows four friends and their antics during their final years of school.",
+    "rating": {
+      "average": 8.4
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/59/149320.jpg"
+    }
+  },
+  {
+    "id": 419,
+    "name": "Wayne",
+    "genres": ["Action", "Comedy"],
+    "summary": "Wayne, a 16 year-old with a heart of gold, sets out on a small, two-stroke road bike from Boston to Florida with his new friend Del, to get back the 79' Trans-Am that was stolen from his father before he died.",
+    "rating": {
+      "average": 8.4
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/283/709372.jpg"
+    }
+  },
+  {
+    "id": 420,
+    "name": "Broad City",
+    "genres": ["Comedy"],
+    "summary": "Broad City follows two women throughout their daily lives in New York City, making the smallest and mundane events hysterical and disturbing to watch all at the same time.",
+    "rating": {
+      "average": 8.4
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/405/1012897.jpg"
+    }
+  },
+  {
+    "id": 421,
+    "name": "Pushing Daisies",
+    "genres": ["Comedy", "drama", "Fantasy"],
+    "summary": "A pastry chef with the power to bring dead people back to life solves murder mysteries with his resurrected childhood sweetheart, a cynical private investigator, and a lovesick waitress.",
+    "rating": {
+      "average": 8.4
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/6/16104.jpg"
+    }
+  },
+  {
+    "id": 422,
+    "name": "Brassic",
+    "genres": ["Comedy", "drama"],
+    "summary": "Comedy series about Vinnie and Dylan, who have grown up together and are inseparable. When Dylan's girlfriend wants to move in search of a better life for her and her son, he must face the hardest decision of his life",
+    "rating": {
+      "average": 8.4
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/368/921503.jpg"
+    }
+  },
+  {
+    "id": 423,
+    "name": "Upright",
+    "genres": ["Comedy", "drama"],
+    "summary": "Two misfits, thrown together by chance in the middle of the Australian desert, forge bonds in a quest to transport a precious piano from one side of the country to the other.",
+    "rating": {
+      "average": 8.4
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/427/1068602.jpg"
+    }
+  },
+  {
+    "id": 424,
+    "name": "This is Going to Hurt",
+    "genres": ["Comedy", "drama"],
+    "summary": "Set on Labor Ward with all its hilarity and heart-lifting highs but also its gut-wrenching lows, the show delivers a brutally honest depiction of life as a junior doctor on the wards, and the toll the job can take back home.",
+    "rating": {
+      "average": 8.4
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/393/984765.jpg"
+    }
+  },
+  {
+    "id": 425,
+    "name": "Allo Allo!",
+    "genres": ["Comedy", "History", "war"],
+    "summary": "In France during World War II, René Artois runs a small café where Resistance fighters, Gestapo men, German Army officers and escaped Allied POWs interact daily, ignorant of one another's true identity or presence, exasperating René.",
+    "rating": {
+      "average": 8.4
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/6/17002.jpg"
+    }
+  },
+  {
+    "id": 426,
+    "name": "All Creatures Great and Small",
+    "genres": ["Comedy", "drama"],
+    "summary": "The trials and misadventures of the staff of a country veterinary office in Yorkshire from the 1930s to the 1950s.",
+    "rating": {
+      "average": 8.4
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/269/673052.jpg"
+    }
+  },
+  {
+    "id": 427,
+    "name": "My So-Called Life",
+    "genres": ["Comedy", "drama", "Romance"],
+    "summary": "A 15-year-old girl and her trials and tribulations of being a teenager and dealing with friends, guys, parents, and school.",
+    "rating": {
+      "average": 8.4
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/7/17956.jpg"
+    }
+  },
+  {
+    "id": 428,
+    "name": "Life On Mars",
+    "genres": ["Crime", "drama", "Mystery"],
+    "summary": "After being involved in a car accident in 2006, DCI Sam Tyler wakes up to find himself in 1973.",
+    "rating": {
+      "average": 8.4
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/6/15855.jpg"
+    }
+  },
+  {
+    "id": 429,
+    "name": "Corner Gas",
+    "genres": ["Comedy"],
+    "summary": "The life, or lack thereof, of a proprietor of a gas station, which is the only stop for miles around and a hub of action on the Prairies.",
+    "rating": {
+      "average": 8.4
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/21/52563.jpg"
+    }
+  },
+  {
+    "id": 430,
+    "name": "The Might Boosh",
+    "genres": ["Comedy", "Fantasy", "Musical"],
+    "summary": "Surreal British comedy in which Vince Noir and Howard Moon have adventures filled with oddball characters while working as Zoo Keepers, before pursuing a musical career and running a second-hand shop.",
+    "rating": {
+      "average": 8.4
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/48/121697.jpg"
+    }
+  },
+  {
+    "id": 431,
+    "name": "Police Sqaud",
+    "genres": ["Comedy", "Crime"],
+    "summary": "Sight gags, puns and non-sequiturs abound as bumbling Sgt. Det. Lt. Frank Drebin and his colleagues at Police Squad solve various puzzling cases.",
+    "rating": {
+      "average": 8.4
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/12/31083.jpg"
+    }
+  },
+  {
+    "id": 432,
+    "name": "My Mad Fat Diary",
+    "genres": ["Comedy", "drama", "Romance"],
+    "summary": "Set in the mid-90s at the height of Cool Britannia, a drama based on real diaries takes an honest look at teenage life through the eyes of funny, music-mad Rae",
+    "rating": {
+      "average": 8.4
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/7/17978.jpg"
+    }
+  },
+  {
+    "id": 433,
+    "name": "The League of Gentlemen",
+    "genres": ["Comedy", "Horror"],
+    "summary": "An interweaving narrative chronicling the antics of such diverse characters as: a transgender taxi driver, a family obsessed with hygiene and toads, a fiery reverend, a carnival owner who kidnaps women into marriage, and a xenophobic couple who run a local shop for local people.",
+    "rating": {
+      "average": 8.4
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/9/24073.jpg"
+    }
+  },
+  {
+    "id": 434,
+    "name": "Green Wing",
+    "genres": ["Comedy", "drama"],
+    "summary": "Funky hospital-based sketch-comedy-drama type show.",
+    "rating": {
+      "average": 8.4
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/12/32002.jpg"
+    }
+  },
+  {
+    "id": 435,
+    "name": "The Kids in the Hall",
+    "genres": ["Comedy"],
+    "summary": "The TV series of the Canadian sketch comedy troupe that, more often than not, puts bizarre, unique, and insane twists in their skits.",
+    "rating": {
+      "average": 8.4
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/59/149794.jpg"
+    }
+  },
+  {
+    "id": 436,
+    "name": "Terriers",
+    "genres": ["Comedy", "Crime", "drama"],
+    "summary": "Ex-cop and recovering alcoholic Hank Dolworth partners with his best friend, former criminal Britt Pollack, in an unlicensed private investigation business.",
+    "rating": {
+      "average": 8.4
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/6/17030.jpg"
+    }
+  },
+  {
+    "id": 437,
+    "name": "Dave",
+    "genres": ["Comedy", "Music"],
+    "summary": "A neurotic mid-20s suburbanite's convinced he's destined to be one of the greatest rappers of all time. Now he's got to prove it to everyone else.",
+    "rating": {
+      "average": 8.3
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/233/582809.jpg"
+    }
+  },
+  {
+    "id": 438,
+    "name": "SnowFall",
+    "genres": ["Crime", "Drama"],
+    "summary": "A look at the early days of the crack cocaine epidemic in Los Angeles during the beginning of the 1980s.",
+    "rating": {
+      "average": 8.3
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/199/499714.jpg"
+    }
+  },
+  {
+    "id": 439,
+    "name": "Unforgotten",
+    "genres": ["Crime", "drama", "Mystery"],
+    "summary": "London detectives investigate crimes from the past, unravelling secrets left buried for years.",
+    "rating": {
+      "average": 8.3
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/26/67051.jpg"
+    }
+  },
+  {
+    "id": 440,
+    "name": "Sex Education",
+    "genres": ["Comedy", "drama"],
+    "summary": "A teenage boy with a sex therapist mother teams up with a high school classmate to set up an underground sex therapy clinic at school.",
+    "rating": {
+      "average": 8.3
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/179/447693.jpg"
+    }
+  },
+  {
+    "id": 441,
+    "name": "Buffy the Vamapire Slayer",
+    "genres": ["Action", "drama", "Fantasy"],
+    "summary": "A young woman, destined to slay vampires, demons and other infernal creatures, deals with her life fighting evil, with the help of her friends.",
+    "rating": {
+      "average": 8.3
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/2/7490.jpg"
+    }
+  },
+  {
+    "id": 442,
+    "name": "Columbo",
+    "genres": ["Crime", "drama", "Mystery"],
+    "summary": "Los Angeles homicide detective Lieutenant Columbo uses his humble ways and ingenuous demeanor to winkle out even the most well-concealed of crimes.",
+    "rating": {
+      "average": 8.3
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/3/9270.jpg"
+    }
+  },
+  {
+    "id": 443,
+    "name": "Ghosts",
+    "genres": ["Comedy", "Fantasy"],
+    "summary": "A group of spirits restlessly squabble in an abandoned country house. To their despair, a young couple inherits the house with hopeful plans to renovate it into a luxury hotel",
+    "rating": {
+      "average": 8.3
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/431/1078144.jpg"
+    }
+  },
+  {
+    "id": 444,
+    "name": "Bad Sisters",
+    "genres": ["Comedy", "drama", "Thriller"],
+    "summary": "The Garvey sisters are bound together by their parents' deaths and a promise to always protect one another.",
+    "rating": {
+      "average": 8.3
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/418/1045091.jpg"
+    }
+  },
+  {
+    "id": 445,
+    "name": "Why Women Kill",
+    "genres": ["Crime", "drama", "Comedy"],
+    "summary": "An anthology series that follows three women in different decades all living in the same house, as they deal with infidelity and betrayals in their marriages.",
+    "rating": {
+      "average": 8.3
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/207/517575.jpg"
+    }
+  },
+  {
+    "id": 446,
+    "name": "PeaceMaker",
+    "genres": ["Action", "Adventure", "Comedy"],
+    "summary": "Peacemaker returns home after recovering from his encounter with Bloodsport - only to discover that his freedom comes at a price.",
+    "rating": {
+      "average": 8.3
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/274/687084.jpg"
+    }
+  },
+  {
+    "id": 447,
+    "name": "Longmire",
+    "genres": ["Action", "drama", "Crime"],
+    "summary": "Walt Longmire is the dedicated and unflappable sheriff of Absaroka County, Wyoming. Widowed only a year, he is a man in psychic repair but buries his pain behind his brave face, unassuming grin and dry wit.",
+    "rating": {
+      "average": 8.3
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/2/5969.jpg"
+    }
+  },
+  {
+    "id": 448,
+    "name": "Taboo",
+    "genres": ["Drama", "Mystery", "Thriller"],
+    "summary": "Adventurer James Keziah Delaney returns to London during the War of 1812 to rebuild his late father's shipping empire. However, both the government and his biggest competitor want his inheritance at any cost--even murder.",
+    "rating": {
+      "average": 8.3
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/137/343258.jpg"
+    }
+  },
+  {
+    "id": 449,
+    "name": "The Goof Fight",
+    "genres": ["Crime", "drama"],
+    "summary": "When Diane Lockhart's life savings are lost, she must start from scratch at a new firm",
+    "rating": {
+      "average": 8.3
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/105/263146.jpg"
+    }
+  },
+  {
+    "id": 450,
+    "name": "Rock",
+    "genres": ["Comedy"],
+    "summary": "Liz Lemon, head writer of the sketch-comedy show TGS with Tracy Jordan, must deal with an arrogant new boss and a crazy new star while trying to run a successful television show without losing her mind",
+    "rating": {
+      "average": 8.3
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/64/160232.jpg"
+    }
+  },
+  {
+    "id": 451,
+    "name": "Poldardk",
+    "genres": ["Drama", "Romance"],
+    "summary": "Ross Poldark returns home after American Revolutionary War and rebuilds his life with a new business venture, making new enemies and finding a new love where he least expects it.",
+    "rating": {
+      "average": 8.3
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/144/360117.jpg"
+    }
+  },
+  {
+    "id": 452,
+    "name": "Eastbound and Down",
+    "genres": ["Comedy", "drama", "Sports"],
+    "summary": "Many years after he turned his back on his hometown, a burned-out major league ballplayer returns to teach Physical Education at his old middle school",
+    "rating": {
+      "average": 8.3
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/6/17326.jpg"
+    }
   }
 ]

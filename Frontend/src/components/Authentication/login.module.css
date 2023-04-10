@@ -112,3 +112,11 @@ body {
   pointer-events: none;
   opacity: 0.5;
 }
+
+.loader {
+  z-index: 10;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
