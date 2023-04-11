@@ -29,15 +29,11 @@ function App() {
   const [Id, setId] = useState();
 
   useEffect(() => {
-    const axios = require("axios");
-    let data = "";
-
     let config = {
       method: "get",
       maxBodyLength: Infinity,
       url: "https://trackyourseries.onrender.com/apis/shows/" + userid,
       headers: {},
-      data: data,
     };
 
     if (userid != "") {

@@ -93,6 +93,7 @@ const Login = ({ showadded, setShowadded }) => {
   useEffect(() => {
     onAuthStateChanged(auth, (user) => {
       if (user) {
+        setUser(user);
         setLoading(true);
         setUserid(user.uid);
         setUserName(user.displayName);
