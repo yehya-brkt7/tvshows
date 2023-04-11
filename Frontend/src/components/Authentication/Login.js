@@ -94,14 +94,11 @@ const Login = ({ showadded, setShowadded }) => {
     onAuthStateChanged(auth, (user) => {
       if (user) {
         setLoading(true);
-        axios
-          .get("https://trackyourseries.onrender.com/apis/user/" + user.uid)
-          .then((res) => {
-            setUserid(res.data[0].uid);
-            setUserName(res.data[0].name);
-            setShowadded(!showadded);
-            navigate("/");
-          });
+        setUserid(user.uid);
+        setUserName(user.displayName);
+        setShowadded(!showadded);
+
+        navigate("/");
       } else {
         setLoading(false);
       }
