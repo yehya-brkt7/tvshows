@@ -60,7 +60,7 @@ function App() {
     }
   }, [showadded]);
 
-  const MINUTE_MS = 6000;
+  const MINUTE_MS = 30000;
 
   useEffect(() => {
     const interval = setInterval(() => {
