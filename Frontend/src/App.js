@@ -60,6 +60,21 @@ function App() {
     }
   }, [showadded]);
 
+  const MINUTE_MS = 6000;
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      console.log("ran");
+      axios.get("https://trackyourseries.onrender.com/apis/disabledarr", {
+        params: {
+          usid: userid,
+        },
+      });
+    }, MINUTE_MS);
+
+    return () => clearInterval(interval); // This represents the unmount function, in which you need to clear your interval to prevent memory leaks.
+  }, []);
+
   return (
     <div className="App">
       <Router>
