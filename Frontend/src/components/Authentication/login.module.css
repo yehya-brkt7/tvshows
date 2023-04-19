@@ -1,5 +1,4 @@
 body {
-  /* background-image: url("/public/blur.jpg"); */
   background-color: #000;
   background-position: center center;
   background-attachment: fixed;
@@ -14,11 +13,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   text-align: center;
-
-  /* width: 100%;
-  height: 100%; */
   margin: 0 auto;
-  /*   padding: 2em 0em; */
 }
 
 .container {
@@ -27,7 +22,6 @@ body {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  /* background-color: #fff; */
   padding: 40px 0px;
   width: 240px;
 }
@@ -51,7 +45,6 @@ body {
   text-decoration: none;
 }
 
-/*btn_background*/
 .effect04 {
   --uismLinkDisplay: var(--smLinkDisplay, inline-flex);
   display: var(--uismLinkDisplay);
@@ -76,13 +69,11 @@ body {
   background-color: #000;
 }
 
-/* HOVERしたら文字1を上に */
 .effect04:hover span {
   -webkit-transform: translateY(-400%) scale(-0.1, 20);
   transform: translateY(-400%) scale(-0.1, 20);
 }
 
-/*文字2*/
 .effect04::before {
   content: attr(data-sm-link-text);
   color: #fff;
@@ -94,14 +85,13 @@ body {
   transform: translateY(500%) scale(-0.1, 20);
 }
 
-/* HOVERしたら文字2を上に */
 .effect04:hover::before {
   letter-spacing: 0.05em;
   -webkit-transform: translateY(0) scale(1, 1);
   transform: translateY(0) scale(1, 1);
 }
 
-.google {
+.span {
   z-index: 20;
   color: white;
   font-size: 15px;

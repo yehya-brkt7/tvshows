@@ -4,11 +4,7 @@
   flex-wrap: wrap;
   justify-content: center;
   text-align: center;
-
-  /* width: 100%;
-    height: 100%; */
   margin: 0 auto;
-  /*   padding: 2em 0em; */
 }
 
 .container {
@@ -17,7 +13,6 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  /* background-color: #fff; */
   padding: 40px 0px;
   width: 240px;
 }
@@ -44,7 +39,6 @@
   text-decoration: none;
 }
 
-/*btn_background*/
 .effect04 {
   --uismLinkDisplay: var(--smLinkDisplay, inline-flex);
   display: var(--uismLinkDisplay);
@@ -64,7 +58,6 @@
   transition-duration: 0.4s;
 }
 
-/* 文字1を上に */
 .effect04:hover {
   background-color: #000;
 }
@@ -73,13 +66,11 @@
   background-color: white;
 }
 
-/* HOVERしたら文字1を上に */
 .effect04:hover span {
   -webkit-transform: translateY(-400%) scale(-0.1, 20);
   transform: translateY(-400%) scale(-0.1, 20);
 }
 
-/*文字2*/
 .effect04::before {
   content: attr(data-sm-link-text);
   color: #fff;
@@ -98,7 +89,7 @@
   transform: translateY(0) scale(1, 1);
 }
 
-.google {
+.span {
   z-index: 20;
   color: white;
   font-size: 15px;

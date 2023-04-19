@@ -70,7 +70,7 @@ const SharedList = (props) => {
           data-sm-link-text="Back"
           target="_blank"
         >
-          <span className={style.google}>Return</span>
+          <span className={style.span}>Return</span>
         </button>
       </Grid>
 

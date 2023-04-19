@@ -156,7 +156,7 @@ const HorizontalCard = ({
                 data-sm-link-text="Save"
                 target="_blank"
               >
-                <span className={style.google}>Update</span>
+                <span className={style.span}>Update</span>
               </button>
               <Grid item xs={12} marginTop="15px" marginBottom="15px">
                 Your Rating : <span className={style.rating}>{fanrating}</span>

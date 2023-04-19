@@ -75,18 +75,15 @@ h2 {
   transition-duration: 0.4s;
 }
 
-/* 文字1を上に */
 .btn:hover {
   background-color: #000;
 }
 
-/* HOVERしたら文字1を上に */
 .btn:hover span {
   -webkit-transform: translateY(-400%) scale(-0.1, 20);
   transform: translateY(-400%) scale(-0.1, 20);
 }
 
-/*文字2*/
 .btn::before {
   content: attr(data-sm-link-text);
   color: #fff;
@@ -98,7 +95,6 @@ h2 {
   transform: translateY(500%) scale(-0.1, 20);
 }
 
-/* HOVERしたら文字2を上に */
 .btn:hover::before {
   letter-spacing: 0.05em;
   -webkit-transform: translateY(0) scale(1, 1);

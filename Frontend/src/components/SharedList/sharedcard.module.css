@@ -1,12 +1,3 @@
-/* .container {
-  position: absolute;
-  height: 300px;
-  width: 600px;
-  top: 60px;
-  left: calc(50% - 300px);
-  display: flex;
-} */
-
 .container {
   display: flex;
   justify-content: center;
@@ -19,7 +10,6 @@
   background-color: #17141d;
   border-radius: 10px;
   box-shadow: -1rem 0 3rem #000;
-  /*   margin-left: -50px; */
   transition: 0.4s ease-out;
   position: relative;
   left: 0px;
@@ -30,10 +20,6 @@
 
 .deleteicon {
   cursor: pointer;
-  /* box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 1);
-    -webkit-box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 1);
-    -moz-box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 1); */
-
   border-radius: 25px;
 }
 
@@ -41,10 +27,6 @@
   transform: scale(1.3);
   transition: transform 0.2s ease-in-out;
 }
-
-/* .card:not(:first-child) {
-    margin-left: -50px;
-  } */
 
 .card:hover {
   transform: translateY(-20px);
@@ -124,7 +106,7 @@ svg {
   transition: 0.6s ease-out;
 }
 
-.google {
+.span {
   z-index: 20;
   color: white;
   font-size: 15px;

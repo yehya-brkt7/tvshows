@@ -41,7 +41,7 @@ const MyList = (props) => {
               data-sm-link-text="Back"
               target="_blank"
             >
-              <span className={style.google}>Return</span>
+              <span className={style.span}>Return</span>
             </button>
             <br></br>
             <button
@@ -50,7 +50,7 @@ const MyList = (props) => {
               data-sm-link-text="With friends"
               target="_blank"
             >
-              <span className={style.google}>Share List</span>
+              <span className={style.span}>Share List</span>
             </button>
           </div>
         </div>

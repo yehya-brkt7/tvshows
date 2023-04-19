@@ -205,7 +205,7 @@ const ShowCard = (props) => {
                     data-sm-link-text="Pick series"
                     target="_blank"
                   >
-                    <span className={style.google}>Add To List</span>
+                    <span className={style.span}>Add To List</span>
                   </button>
                 </div>
               </div>

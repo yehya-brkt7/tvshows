@@ -79,7 +79,7 @@ const List = ({
                 data-sm-link-text="view list"
                 target="_blank"
               >
-                <span className={style.google}>Your List</span>
+                <span className={style.span}>Your List</span>
               </button>
             </div>
           </div>
@@ -93,7 +93,7 @@ const List = ({
                 data-sm-link-text="Exit"
                 target="_blank"
               >
-                <span className={style.google}>LogOut</span>
+                <span className={style.span}>LogOut</span>
                 <Avatar
                   className={style.avatarimage}
                   sx={{ marginTop: "25px" }}

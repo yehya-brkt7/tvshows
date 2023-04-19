@@ -145,7 +145,7 @@ const Login = ({ showadded, setShowadded }) => {
                   data-sm-link-text="with google"
                   target="_blank"
                 >
-                  <span className={style.google}>Login</span>
+                  <span className={style.span}>Login</span>
                 </button>
               </div>
             </div>
