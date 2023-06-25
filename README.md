@@ -1,8 +1,10 @@
 Tv show tracker MERN app
 
-You can login using google authentication, view a list of tv shows rated by IMDB, 
-you can add the shows you watched to your list and rate them,
-you can share your list with your friends on multiple social media platforms
+You can login using google authentication with firebase  
+view a list of tv shows rated by IMDB  
+search tv shows by name  
+add the shows you watched to your list and rate them   
+share your list with your friends on multiple social media platforms  
 
 The project utilizes responsive UI components built with React, HTML, CSS modules, and MUI (Material-UI). 
 
