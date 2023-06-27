@@ -15016,5 +15016,18 @@
     "image": {
       "original": "https://static.tvmaze.com/uploads/images/original_untouched/415/1039348.jpg"
     }
+  },
+  {
+    "id": 490,
+    "name": "Wayward Pines",
+    "genres": ["Drama", "Mystery", "Thriller"],
+    "summary": " After two agents mysteriously disappear in Wayward Pines, a small town in Idaho, Ethan Burke, a secret agent, takes over the case. His investigations lead him to several revelations.",
+    "rating": {
+      "average": 7.3
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/7/17608.jpg"
+    }
   }
 ]
