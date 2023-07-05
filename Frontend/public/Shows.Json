@@ -15042,5 +15042,18 @@
     "image": {
       "original": "https://static.tvmaze.com/uploads/images/original_untouched/459/1149371.jpg"
     }
+  },
+  {
+    "id": 492,
+    "name": "Mare of Easttown",
+    "genres": ["Mystery", "drama", "Crime"],
+    "summary": " Mare Sheehan, an office police investigator in a small Pennsylvania town, investigates a brutal murder as she tries to keep her life from falling apart.",
+    "rating": {
+      "average": 8.4
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/301/753981.jpg"
+    }
   }
 ]
