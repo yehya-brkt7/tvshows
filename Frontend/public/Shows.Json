@@ -15055,5 +15055,18 @@
     "image": {
       "original": "https://static.tvmaze.com/uploads/images/original_untouched/301/753981.jpg"
     }
+  },
+  {
+    "id": 493,
+    "name": "La Brea",
+    "genres": ["Mystery", "thriller", "Science-Fiction"],
+    "summary": " A massive sinkhole opens up in the middle of Los Angeles, separating a family between two worlds. The mother and son fall into an unexplainable primeval land alongside a group of strangers trying to figure out where they are, and how to get back home. Left above is a daughter, who barely manages to survive the disaster, and the father, whose troubled past and hallucinations make him an unlikely choice to help solve the mystery -- and reunite the family. But when he realizes his visions might just be the key to finding their loved ones, time will be the only thing that stands in their way.",
+    "rating": {
+      "average": 5.8
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/444/1111661.jpg"
+    }
   }
 ]
