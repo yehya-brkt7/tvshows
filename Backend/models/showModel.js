@@ -2,12 +2,7 @@ const mongoose = require("mongoose");
 
 const Schema = mongoose.Schema;
 
-// const disabledSchema = new Schema({ id: String });
-// const showSchema = new Schema({
-//   disabledarray: [disabledSchema],
-// });
 
-// const disabledArr = new Schema ({ any : []})
 
 const showSchema = new Schema(
   {
@@ -41,3 +36,4 @@ const showSchema = new Schema(
 );
 
 module.exports = mongoose.model("Show", showSchema);
+
