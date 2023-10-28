@@ -15068,5 +15068,18 @@
     "image": {
       "original": "https://static.tvmaze.com/uploads/images/original_untouched/444/1111661.jpg"
     }
+  },
+  {
+    "id": 494,
+    "name": "The Terror",
+    "genres": ["Mystery", "thriller", "Horror"],
+    "summary": "A navy ship undertakes a voyage in the Arctic to find the Northwest Passage. The crew soon get tried as the weather conditions begin to take a toll on them.",
+    "rating": {
+      "average": 7.9
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/medium_portrait/241/603425.jpg"
+    }
   }
 ]
