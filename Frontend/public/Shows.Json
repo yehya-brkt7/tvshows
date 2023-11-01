@@ -15081,5 +15081,18 @@
     "image": {
       "original": "https://static.tvmaze.com/uploads/images/medium_portrait/241/603425.jpg"
     }
+  },
+  {
+    "id": 495,
+    "name": "Hijack",
+    "genres": ["thriller", "Action"],
+    "summary": "When Flight KA29 is hijacked during its seven-hour journey from Dubai to London, corporate negotiator Sam Nelson tries to use his professional skills to save everyone on board.",
+    "rating": {
+      "average": 7.4
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/medium_portrait/466/1166200.jpg"
+    }
   }
 ]
