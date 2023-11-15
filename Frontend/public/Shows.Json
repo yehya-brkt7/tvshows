@@ -15094,5 +15094,18 @@
     "image": {
       "original": "https://static.tvmaze.com/uploads/images/medium_portrait/466/1166200.jpg"
     }
+  },
+  {
+    "id": 496,
+    "name": "Gen V",
+    "genres": ["thriller", "SuperHero", "Science-Fiction"],
+    "summary": "The lives of hormonal, competitive Superheroes as they put their physical, sexual, and moral boundaries to the test",
+    "rating": {
+      "average": 7.9
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/medium_portrait/473/1184947.jpg"
+    }
   }
 ]
