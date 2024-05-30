@@ -15107,5 +15107,31 @@
     "image": {
       "original": "https://static.tvmaze.com/uploads/images/medium_portrait/473/1184947.jpg"
     }
+  },
+  {
+    "id": 497,
+    "name": "Outer Range",
+    "genres": ["thriller", "Mystery"],
+    "summary": "The Abbotts are coping with the disappearance of their daughter-in-law when the neighbouring Tillersons make a play for their ranch land. Tension comes to a head when a mysterious black void arrives in the Abbotts' pasture.",
+    "rating": {
+      "average": 7.1
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/medium_portrait/514/1285443.jpg"
+    }
+  },
+  {
+    "id": 498,
+    "name": "Shōgun",
+    "genres": ["Drama", "War"],
+    "summary": "Set in Japan in the year 1600, Lord Yoshii Toranaga is fighting for his life as his enemies on the Council of Regents unite against him, when a mysterious European ship is found marooned in a nearby fishing village",
+    "rating": {
+      "average": 8.7
+    },
+
+    "image": {
+      "original": "https://static.tvmaze.com/uploads/images/medium_portrait/506/1265760.jpg"
+    }
   }
 ]
